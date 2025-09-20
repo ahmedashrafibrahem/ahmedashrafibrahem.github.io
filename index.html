@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="أحمد أشرف - مطور فرونت إند">
+    <meta name="robots" content="index, follow">
+    <title>أحمد أشرف - مطور فرونت إند | متخصص في الذكاء الاصطناعي والأمن السيبراني</title>
+    <meta name="keywords" content="أحمد أشرف, مطور فرونت إند, AI, الأمن السيبراني, Angular, React, Vue.js, JavaScript, Python, تطوير ويب, بورتفوليو, مشاريع برمجية, تصميم واجهات">    
+    <meta name="description" content="أحمد أشرف، مطور فرونت إند متخصص وخبير في الذكاء الاصطناعي والأمن السيبراني. أقدم حلول ويب إبداعية ومتجاوبة باستخدام أحدث التقنيات. استعرض مشاريعي في Angular وReact وVue.js.">
+    
+    <meta property="og:title" content="أحمد أشرف | مطور فرونت إند، AI، أمن سيبراني">
+    <meta property="og:description" content="مطور فرونت إند متخصص في Angular وReact، مع خبرة في الذكاء الاصطناعي والأمن السيبراني. اكتشف مشاريعي وحلولي التقنية.">
+    <meta property="og:image" content="assets/img/hero-1.png">
+    <meta property="og:url" content="https://http://gwwad.me/"> <!-- Replace with your actual portfolio URL -->
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="أحمد أشرف | مطور فرونت إند، AI، أمن سيبراني">
+    <meta name="twitter:description" content="تطوير فرونت إند، ذكاء اصطناعي، أمن سيبراني، وبناء حلول ويب مبتكرة مع أحمد أشرف.">
+    <meta name="twitter:image" content="assets/img/hero-1.png">
+    
+    <link rel="icon" href="assets/img/hero-1.png" type="image/png">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "أحمد أشرف",
+          "url": "https://http://gwwad.me/", <!-- Replace with your actual portfolio URL -->
+          "image": "assets/img/hero-1.png",
+          "sameAs": [
+            "https://www.linkedin.com/in/ahmedashrafibrahim1mnoomidooashraf/", <!-- Replace with your LinkedIn profile -->
+            "https://github.com/ahmedashrafibrahem", <!-- Replace with your GitHub profile -->
+            "https://twitter.com/mnoomidooashraf"  <!-- Replace with your Twitter profile -->
+          ],
+          "jobTitle": "Frontend Developer, AI & Cybersecurity Specialist",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+          },
+          "alumniOf": "Your University Name", <!-- Replace with your university name -->
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "القاهرة",
+            "addressCountry": "EG"
+          },
+          "email": "mnoomidoostar6@gmail.com",
+          "telephone": "+20 102 684 3062"
+        }
+        </script>
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <div class="spinner-circle"></div>
+            <div class="spinner-inner"></div>
+        </div>
+        <p class="loading-text" data-en="Preparing Your Unique Experience..." data-ar="جاري تحضير تجربتك المميزة...">جاري تحضير تجربتك المميزة...</p>
+    </div>
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget" id="aiChatWidget">
+        <div class="chat-toggle" id="chatToggle">
+            <div class="chat-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chat-pulse"></div>
+        </div>
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chat-info">
+                    <h4 data-en="Ahmed's AI Assistant" data-ar="مساعد أحمد الذكي">مساعد أحمد الذكي</h4>
+                    <span class="chat-status" data-en="Online" data-ar="متصل">متصل</span>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p data-en="Hello! I'm Ahmed's AI assistant. Ask me anything about his work, skills, or projects!" data-ar="مرحباً! أنا مساعد أحمد الذكي. اسألني أي شيء عن عمله أو مهاراته أو مشاريعه!">مرحباً! أنا مساعد أحمد الذكي. اسألني أي شيء عن عمله أو مهاراته أو مشاريعه!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="اكتب رسالتك..." data-en-placeholder="Type your message..." data-ar-placeholder="اكتب رسالتك...">
+                <button class="chat-send" id="chatSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Code Editor Widget -->
+    <div class="code-editor-widget" id="codeEditorWidget">
+        <div class="code-toggle" id="codeToggle">
+            <div class="code-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="code-pulse"></div>
+        </div>
+        <div class="code-container" id="codeContainer">
+            <div class="code-header">
+                <div class="code-title">
+                    <i class="fas fa-terminal"></i>
+                    <span data-en="Live Code Demo" data-ar="عرض أكواد مباشر">عرض أكواد مباشر</span>
+                </div>
+                <div class="code-controls">
+                    <button class="code-run" id="codeRun">
+                        <i class="fas fa-play"></i>
+                        <span data-en="Run" data-ar="تشغيل">تشغيل</span>
+                    </button>
+                    <button class="code-close" id="codeClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="code-tabs">
+                <button class="code-tab active" data-lang="html">HTML</button>
+                <button class="code-tab" data-lang="css">CSS</button>
+                <button class="code-tab" data-lang="js">JavaScript</button>
+            </div>
+            <div class="code-editor" id="codeEditor">
+                <textarea id="codeTextarea" spellcheck="false"></textarea>
+                <div class="code-output" id="codeOutput"></div>
+            </div>
+            <div class="code-preview" id="codePreview">
+                <iframe id="previewFrame" sandbox="allow-scripts allow-same-origin"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D Canvas Background -->
+    <canvas id="threejs-canvas" class="threejs-background"></canvas>
+
+    <!-- Interactive Cursor -->
+    <div class="interactive-cursor" id="interactiveCursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Advanced Particle System -->
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+    <!-- Liquid Morphing Shapes -->
+    <div class="liquid-shapes" id="liquidShapes">
+        <div class="liquid-blob blob-1"></div>
+        <div class="liquid-blob blob-2"></div>
+        <div class="liquid-blob blob-3"></div>
+        <div class="liquid-blob blob-4"></div>
+    </div>
+
+    <!-- Floating Tech Icons -->
+    <div class="floating-tech-icons" id="floatingIcons">
+        <div class="tech-icon" data-tech="angular"><i class="fab fa-angular"></i></div>
+        <div class="tech-icon" data-tech="react"><i class="fab fa-react"></i></div>
+        <div class="tech-icon" data-tech="vue"><i class="fab fa-vuejs"></i></div>
+        <div class="tech-icon" data-tech="js"><i class="fab fa-js-square"></i></div>
+        <div class="tech-icon" data-tech="node"><i class="fab fa-node-js"></i></div>
+        <div class="tech-icon" data-tech="python"><i class="fab fa-python"></i></div>
+    </div>
+
+    <!-- Sound Visualizer -->
+    <div class="sound-visualizer" id="soundVisualizer">
+        <div class="visualizer-toggle" id="visualizerToggle">
+            <i class="fas fa-music"></i>
+        </div>
+        <canvas id="visualizer-canvas" class="visualizer-canvas"></canvas>
+    </div>
+
+    <!-- Interactive Neon Text -->
+    <div class="neon-text-container" id="neonTextContainer">
+        <div class="neon-text" data-text="AHMED ASHRAF">AHMED ASHRAF</div>
+        <div class="neon-subtext">Frontend Developer</div>
+    </div>
+
+    <!-- Matrix Rain Effect -->
+    <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+
+    <!-- Holographic Card -->
+    <div class="holographic-card" id="holographicCard">
+        <div class="holo-content">
+            <div class="holo-avatar">
+                <img src="assets/img/hero-1.png" alt="أحمد أشرف">
+            </div>
+            <div class="holo-info">
+                <h3>Ahmed Ashraf</h3>
+                <p>Frontend Developer</p>
+                <div class="holo-stats">
+                    <div class="stat">
+                        <span class="value">25+</span>
+                        <span class="label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="value">3+</span>
+                        <span class="label">Years</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Light Creative Graphics -->
+    <div class="creative-graphics">
+        <!-- Floating Geometric Shapes -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        
+        <!-- Animated Background Lines -->
+        <div class="bg-lines">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        
+        <!-- Subtle Glow Effects -->
+        <div class="glow-effects">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2 data-en="Ahmed Ashraf" data-ar="أحمد أشرف">أحمد أشرف</h2>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-en="About" data-ar="من أنا">من أنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#frontend" class="nav-link" data-en="Frontend" data-ar="الفرونت إند">الفرونت إند</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ai" class="nav-link" data-en="AI" data-ar="الذكاء الاصطناعي">الذكاء الاصطناعي</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cybersecurity" class="nav-link" data-en="Cybersecurity" data-ar="الأمن السيبراني">الأمن السيبراني</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل معي">تواصل معي</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <div class="control-buttons">
+                    <button class="theme-toggle" id="theme-toggle" title="تبديل الوضع المظلم">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="lang-toggle" id="lang-toggle" title="تغيير اللغة">
+                        <span class="lang-text">EN</span>
+                    </button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-text">
+                    <div class="hero-badge" data-aos="fade-down">
+                        <i class="fas fa-star"></i>
+                        <span data-en="Available for Projects" data-ar="متاح للمشاريع">متاح للمشاريع</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line" data-en="Hello, I'm" data-ar="مرحباً، أنا">مرحباً، أنا</span>
+                        <span class="gradient-text typing-effect" data-en="Ahmed Ashraf" data-ar="أحمد أشرف">أحمد أشرف</span>
+                        <div class="title-decoration">
+                            <div class="decoration-dot"></div>
+                            <div class="decoration-line"></div>
+                        </div>
+                    </h1>
+                    <p class="hero-subtitle" data-en="Frontend Developer | AI Expert | Cybersecurity Specialist" data-ar="مطور فرونت إند متخصص | خبير في الذكاء الاصطناعي | مختص الأمن السيبراني">
+                        مطور فرونت إند متخصص | خبير في الذكاء الاصطناعي | مختص الأمن السيبراني
+                    </p>
+                    <p class="hero-description" data-en="I create modern and responsive websites using the latest technologies, with expertise in Angular and programming training" data-ar="أقوم بتطوير مواقع ويب حديثة ومتجاوبة باستخدام أحدث التقنيات، مع خبرة في Angular وتدريب البرمجة">
+                        أقوم بتطوير مواقع ويب حديثة ومتجاوبة باستخدام أحدث التقنيات، مع خبرة في Angular وتدريب البرمجة
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#frontend" class="btn btn-primary glow-btn">
+                            <i class="fas fa-rocket"></i>
+                            <span data-en="View My Work" data-ar="أعمالي في الفرونت إند">أعمالي في الفرونت إند</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary glass-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-en="Get In Touch" data-ar="تواصل معي">تواصل معي</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">25+</div>
+                                <div class="stat-label" data-en="Completed Projects" data-ar="مشروع مكتمل">مشروع مكتمل</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label" data-en="Years Experience" data-ar="سنوات خبرة">سنوات خبرة</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label" data-en="Students Trained" data-ar="طالب مدرب">طالب مدرب</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-social">
+                        <a href="#" class="social-btn" data-platform="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-btn" data-platform="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-btn" data-platform="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-btn" data-platform="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-container">
+                        <div class="image-frame">
+                            <img src="assets/img/hero-1.png" alt="أحمد أشرف" class="hero-img">
+                            <div class="image-overlay"></div>
+                            <div class="image-decoration">
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-plus"></div>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" style="--delay: 0s">
+                                <i class="fab fa-angular"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 1s">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 2s">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 3s">
+                                <i class="fab fa-python"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+            <div class="shape-3"></div>
+            <div class="shape-4"></div>
+            <div class="shape-5"></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <div class="scroll-text" data-en="Scroll Down" data-ar="اسحب للأسفل">اسحب للأسفل</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-en="About Me" data-ar="من أنا">من أنا</h2>
+                <p class="section-subtitle" data-en="My Journey in the World of Technology" data-ar="رحلتي في عالم التكنولوجيا">رحلتي في عالم التكنولوجيا</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="about-description" data-en="I am Ahmed Ashraf, a Cybersecurity graduate with a great passion for application development and Artificial Intelligence. My journey began with studying AI, then I moved on to work as a programming trainer, and currently I focus on frontend development using Angular." data-ar="أنا أحمد أشرف، خريج تخصص الأمن السيبراني مع شغف كبير بتطوير التطبيقات والذكاء الاصطناعي. بدأت رحلتي بدراسة الـ AI ثم انتقلت للعمل كمدرب برمجة، وحالياً أركز على تطوير الفرونت إند باستخدام Angular.">
+                        أنا أحمد أشرف، خريج تخصص الأمن السيبراني مع شغف كبير بتطوير التطبيقات والذكاء الاصطناعي. 
+                        بدأت رحلتي بدراسة الـ AI ثم انتقلت للعمل كمدرب برمجة، وحالياً أركز على تطوير الفرونت إند باستخدام Angular.
+                    </p>
+                    <div class="skills-overview">
+                        <div class="skill-category">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4 data-en="Frontend Development" data-ar="تطوير الفرونت إند">تطوير الفرونت إند</h4>
+                            <p data-en="Specialized in Angular, HTML5, CSS3, JavaScript" data-ar="متخصص في Angular, HTML5, CSS3, JavaScript">متخصص في Angular, HTML5, CSS3, JavaScript</p>
+                        </div>
+                        <div class="skill-category">
+                            <i class="fas fa-brain"></i>
+                            <h4 data-en="Artificial Intelligence" data-ar="الذكاء الاصطناعي">الذكاء الاصطناعي</h4>
+                            <p data-en="Experience in Machine Learning and Model Development" data-ar="خبرة في Machine Learning وتطوير النماذج">خبرة في Machine Learning وتطوير النماذج</p>
+                        </div>
+                        <div class="skill-category">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4 data-en="Cybersecurity" data-ar="الأمن السيبراني">الأمن السيبراني</h4>
+                            <p data-en="Strong academic foundation in system protection" data-ar="أساس أكاديمي قوي في حماية الأنظمة">أساس أكاديمي قوي في حماية الأنظمة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="assets/img/hero-2.jpg" alt="أحمد أشرف" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontend Portfolio Section -->
+    <section id="frontend" class="frontend-portfolio">
+        <div class="portfolio-background">
+            <div class="bg-shapes">
+                <div class="bg-shape-1"></div>
+                <div class="bg-shape-2"></div>
+                <div class="bg-shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-code"></i>
+                    <span data-en="My Latest Work" data-ar="أحدث أعمالي">أحدث أعمالي</span>
+                </div>
+                <h2 class="section-title" data-en="Frontend Development Portfolio" data-ar="محفظة أعمال الفرونت إند">محفظة أعمال الفرونت إند</h2>
+                <p class="section-subtitle" data-en="Showcasing creative solutions and innovative designs that bring ideas to life" data-ar="عرض حلول إبداعية وتصاميم مبتكرة تحول الأفكار إلى واقع">عرض حلول إبداعية وتصاميم مبتكرة تحول الأفكار إلى واقع</p>
+            </div>
+
+            <!-- Enhanced Portfolio Navigation -->
+            <div class="portfolio-navigation" data-aos="fade-up" data-aos-delay="100">
+                <div class="nav-container">
+                    <button class="portfolio-nav-btn active" data-category="all" data-count="14">
+                        <div class="nav-icon"><i class="fas fa-th-large"></i></div>
+                        <div class="nav-content">
+                            <span class="nav-title" data-en="All Projects" data-ar="جميع المشاريع">جميع المشاريع</span>
+                            <span class="nav-count">14</span>
+                        </div>
+                    </button>
+                    <button class="portfolio-nav-btn" data-category="portfolios" data-count="2">
+                        <div class="nav-icon"><i class="fas fa-user-circle"></i></div>
+                        <div class="nav-content">
+                            <span class="nav-title" data-en="Portfolios" data-ar="بورتفوليوهات">بورتفوليوهات</span>
+                            <span class="nav-count">2</span>
+                        </div>
+                    </button>
+                    <button class="portfolio-nav-btn" data-category="landing" data-count="2">
+                        <div class="nav-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="nav-content">
+                            <span class="nav-title" data-en="Landing Pages" data-ar="صفحات هبوط">صفحات هبوط</span>
+                            <span class="nav-count">2</span>
+                        </div>
+                    </button>
+                    <button class="portfolio-nav-btn" data-category="companies" data-count="6">
+                        <div class="nav-icon"><i class="fas fa-building"></i></div>
+                        <div class="nav-content">
+                            <span class="nav-title" data-en="Companies" data-ar="شركات">شركات</span>
+                            <span class="nav-count">6</span>
+                        </div>
+                    </button>
+                    <button class="portfolio-nav-btn" data-category="educational" data-count="1">
+                        <div class="nav-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="nav-content">
+                            <span class="nav-title" data-en="Educational Platforms" data-ar="منصات تعليمية">منصات تعليمية</span>
+                            <span class="nav-count">1</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Portfolio Showcase -->
+            <div class="portfolio-showcase">
+                <!-- Featured Project -->
+                <div class="featured-project" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-container">
+                        <div class="project-preview">
+                            <div class="preview-device">
+                                <div class="device-frame">
+                                    <div class="device-screen">
+                                        <img src="assets/img/prof.png" alt="منصة تعليمية">
+                                        <div class="screen-overlay">
+                                            <div class="overlay-actions">
+                                                <a href="https://prof-english.net" class="preview-btn live-demo">
+                                                    <i class="fas fa-play"></i>
+                                                    <span data-en="Live Demo" data-ar="عرض مباشر">عرض مباشر</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-badge featured-badge">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span data-en="Featured Educational Platform" data-ar="منصة تعليمية مميزة">منصة تعليمية مميزة</span>
+                            </div>
+                            <h3 class="project-title" data-en="Interactive Learning Platform" data-ar="منصة تعليمية تفاعلية">منصة تعليمية تفاعلية</h3>
+                            <p class="project-description" data-en="A comprehensive e-learning platform with video courses, quizzes, and progress tracking, now featured to showcase its robust capabilities and interactive features." data-ar="منصة تعلم إلكتروني كاملة مع دورات فيديو واختبارات وتتبع التقدم، تميزت لعرض قدراتها القوية وميزاتها التفاعلية.">منصة تعلم إلكتروني كاملة مع دورات فيديو واختبارات وتتبع التقدم، تميزت لعرض قدراتها القوية وميزاتها التفاعلية.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <div class="metric-value">100%</div>
+                                    <div class="metric-label" data-en="Responsive" data-ar="متجاوب">متجاوب</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">98</div>
+                                    <div class="metric-label" data-en="Engagement" data-ar="تفاعل">تفاعل</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">A+</div>
+                                    <div class="metric-label" data-en="UX Design" data-ar="تصميم تجربة المستخدم">تصميم تجربة المستخدم</div>
+                                </div>
+                            </div>
+                            <div class="project-technologies">
+                                <div class="tech-stack">
+                                    <div class="tech-item angular">
+                                        <i class="fab fa-angular"></i>
+                                        <span>Angular</span>
+                                    </div>
+                                    <div class="tech-item node">
+                                        <i class="fab fa-node-js"></i>
+                                        <span>Node.js</span>
+                                    </div>
+                                    <div class="tech-item socketio">
+                                        <i class="fas fa-plug"></i>
+                                        <span>Socket.io</span>
+                                    </div>
+                                    <div class="tech-item mongodb">
+                                        <i class="fas fa-database"></i>
+                                        <span>MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular Projects Container -->
+                <div class="regular-projects-container" data-aos="fade-up" data-aos-delay="300">
+                    <!-- Projects Grid -->
+                    <div class="projects-grid">
+                        <!-- Modern E-commerce Platform Project -->
+                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span data-en="E-commerce Platform" data-ar="منصة تجارة إلكترونية">منصة تجارة إلكترونية</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/NEXUS PAY.png" alt="منصة تجارة إلكترونية">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://nexus-pay.netlify.app/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="Modern E-commerce Platform" data-ar="منصة تجارة إلكترونية حديثة">منصة تجارة إلكترونية حديثة</h4>
+                                <p class="card-description" data-en="A comprehensive e-commerce solution built with Laravel, featuring a responsive UI, powerful admin dashboard, and multiple payment integrations, focusing on security and performance." data-ar="منصة تجارة إلكترونية كاملة مبنية بـ Laravel، تتضمن واجهة مستخدم متجاوبة، لوحة تحكم إدارية قوية، وتكاملات دفع متعددة، مع التركيز على الأمان والأداء.">منصة تجارة إلكترونية كاملة مبنية بـ Laravel، تتضمن واجهة مستخدم متجاوبة، لوحة تحكم إدارية قوية، وتكاملات دفع متعددة، مع التركيز على الأمان والأداء.</p>
+                                <div class="card-tags">
+                                    <span class="tag">Laravel</span>
+                                    <span class="tag">PHP</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">Vue.js</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>5.5k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>450</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="2 weeks ago" data-ar="منذ أسبوعين">منذ أسبوعين</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Solution Law Project -->
+                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-building"></i>
+                                    <span data-en="Company Website" data-ar="موقع شركة">موقع شركة</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/solution-law.png" alt="Solution Law Website">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://solution-law.netlify.app/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="Solution Law Website" data-ar="موقع الحلول القانونية">موقع الحلول القانونية</h4>
+                                <p class="card-description" data-en="Professional website for a law firm, offering legal services with integrity and dedication." data-ar="موقع احترافي لشركة محاماة، يقدم خدمات قانونية بنزاهة وتفان.">موقع احترافي لشركة محاماة، يقدم خدمات قانونية بنزاهة وتفان.</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>1.5k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>120</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="3 days ago" data-ar="منذ 3 أيام">منذ 3 أيام</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AgriBloom Project -->
+                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-tractor"></i>
+                                    <span data-en="Agricultural Website" data-ar="موقع زراعي">موقع زراعي</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/agribloom.png" alt="AgriBloom Website">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://agribloom.netlify.app/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="AgriBloom Sustainable Agriculture" data-ar="أجريبلوم للزراعة المستدامة">أجريبلوم للزراعة المستدامة</h4>
+                                <p class="card-description" data-en="Website dedicated to pioneering sustainable agriculture through innovation and dedication." data-ar="موقع مخصص لريادة الزراعة المستدامة من خلال الابتكار والتفاني.">موقع مخصص لريادة الزراعة المستدامة من خلال الابتكار والتفاني.</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>1.8k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>150</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="5 days ago" data-ar="منذ 5 أيام">منذ 5 أيام</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Futuristic Fintech Project -->
+                        <div class="project-card landing" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span data-en="Fintech Landing Page" data-ar="صفحة هبوط تقنية مالية">صفحة هبوط تقنية مالية</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/NEXUS PAY.png" alt="Futuristic Fintech Website">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://futuristic-fintech-website.netlify.app/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="Futuristic Fintech Website" data-ar="موقع تقنية مالية مستقبلي">موقع تقنية مالية مستقبلي</h4>
+                                <p class="card-description" data-en="Modern and sleek landing page for a futuristic fintech product." data-ar="صفحة هبوط حديثة وأنيقة لمنتج تقنية مالية مستقبلي.">صفحة هبوط حديثة وأنيقة لمنتج تقنية مالية مستقبلي.</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>2.1k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>180</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="1 week ago" data-ar="منذ أسبوع">منذ أسبوع</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Luxury Real Estate Project -->
+                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-city"></i>
+                                    <span data-en="Real Estate Website" data-ar="موقع عقاري">موقع عقاري</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/AXIOM.png" alt="Luxury Real Estate Website">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://luxury-real-estate-website.netlify.app/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="Luxury Real Estate Website" data-ar="موقع عقارات فاخرة">موقع عقارات فاخرة</h4>
+                                <p class="card-description" data-en="Elegant website for luxury real estate properties with stunning visuals and detailed listings." data-ar="موقع أنيق لعقارات فاخرة مع صور مذهلة وقوائم مفصلة.">موقع أنيق لعقارات فاخرة مع صور مذهلة وقوائم مفصلة.</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>2.5k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>210</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="2 weeks ago" data-ar="منذ أسبوعين">منذ أسبوعين</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Education Landing Page Project (Future Edu) -->
+                        <div class="project-card landing" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-rocket"></i>
+                                    <span data-en="Landing Page" data-ar="صفحة هبوط">صفحة هبوط</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/LEARN.png" alt="Education Landing Page">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://blue-flame-team.github.io/Education-LandingPage/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="Education Landing Page" data-ar="موقع تعليمي">Future Edu</h4>
+                                <p class="card-description" data-en="Educational platform to assist in university admissions." data-ar="منصة تعليمية للمساعدة في القبول الجامعي.">منصة تعليمية للمساعدة في القبول الجامعي.</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>1.5k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>120</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="3 days ago" data-ar="منذ 3 أيام">منذ 3 أيام</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Elbawaba 2025 Project -->
+                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="700">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-balance-scale"></i>
+                                    <span data-en="Legal Website" data-ar="موقع قانوني">موقع قانوني</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/mohamo.png" alt="Elbawaba 2025">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://blue-flame-team.github.io/Elbawaba2025/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="Elbawaba Legal Portal" data-ar="البوابة القانونية السعودية">البوابة القانونية السعودية</h4>
+                                <p class="card-description" data-en="Discover Saudi Arabian legal rulings, fatwas, and regulations." data-ar="اكتشف الأحكام والفتاوى والأنظمة القانونية في المملكة العربية السعودية">اكتشف الأحكام والفتاوى والأنظمة القانونية في المملكة العربية السعودية</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>1.2k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>90</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="1 day ago" data-ar="منذ يوم">منذ يوم</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ahmed Hatem Eldib Project -->
+                        <div class="project-card portfolios" data-aos="fade-up" data-aos-delay="800">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-user-circle"></i>
+                                    <span data-en="Portfolio" data-ar="بورتفوليو">بورتفوليو</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/hatem.png" alt="Ahmed Hatem Eldib">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://blue-flame-team.github.io/Ahmed-Hatem-Eldib/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="Ahmed Hatem Eldib" data-ar="أحمد حاتم الديب">أحمد حاتم الديب</h4>
+                                <p class="card-description" data-en="Marketing and Business Consultant | Founder of Marketing Mindset." data-ar="مستشار تسويق وأعمال | مؤسس Marketing Mindset">مستشار تسويق وأعمال | مؤسس Marketing Mindset</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>1.8k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>150</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="2 days ago" data-ar="منذ يومين">منذ يومين</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Admin Panel Project -->
+                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="900">
+                            <div class="card-header">
+                                <div class="project-type">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span data-en="Admin Panel" data-ar="لوحة تحكم">لوحة تحكم</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-dot"></span>
+                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
+                                </div>
+                            </div>
+                            <div class="card-preview">
+                                <img src="assets/img/admin-mohamo.png" alt="Admin Panel">
+                                <div class="preview-overlay">
+                                    <div class="overlay-actions">
+                                        <a href="https://blue-flame-team.github.io/admin/" target="_blank" class="action-btn" data-action="view">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <button class="action-btn" data-action="code">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                        <button class="action-btn" data-action="like">
+                                            <i class="fas fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title" data-en="Admin Control Panel" data-ar="لوحة تحكم الإدارة">لوحة تحكم الإدارة</h4>
+                                <p class="card-description" data-en="A comprehensive administrative control panel." data-ar="لوحة تحكم إدارية متكاملة.">لوحة تحكم إدارية متكاملة.</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-eye"></i>
+                                        <span>1.0k</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-heart"></i>
+                                        <span>80</span>
+                                    </div>
+                                </div>
+                                <div class="project-date">
+                                    <span data-en="4 days ago" data-ar="منذ 4 أيام">منذ 4 أيام</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section" data-aos="fade-up" data-aos-delay="500">
+                    <button class="load-more-btn">
+                        <span class="btn-text" data-en="View All Projects" data-ar="عرض جميع المشاريع">عرض جميع المشاريع</span>
+                        <div class="btn-icon">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </button>
+                    <p class="load-more-text" data-en="Discover more of my creative work and technical solutions" data-ar="اكتشف المزيد من أعمالي الإبداعية والحلول التقنية">اكتشف المزيد من أعمالي الإبداعية والحلول التقنية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Section -->
+    <section id="ai" class="ai-section">
+        <div class="container">
+            <div class="coming-soon-container" data-aos="fade-up">
+                <div class="coming-soon-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h2 class="coming-soon-title" data-en="Artificial Intelligence" data-ar="الذكاء الاصطناعي">الذكاء الاصطناعي</h2>
+                    <p class="coming-soon-description" data-en="Exciting projects in the field of Artificial Intelligence and Machine Learning are coming soon..." data-ar="مشاريع مثيرة في مجال الذكاء الاصطناعي وتعلم الآلة قادمة قريباً...">مشاريع مثيرة في مجال الذكاء الاصطناعي وتعلم الآلة قادمة قريباً...</p>
+                    <div class="coming-soon-badge">
+                        <span data-en="Soon" data-ar="قريباً">قريباً</span>
+                    </div>
+                    <div class="skills-preview">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cybersecurity Section -->
+    <section id="cybersecurity" class="cybersecurity-section">
+        <div class="container">
+            <div class="coming-soon-container" data-aos="fade-up">
+                <div class="coming-soon-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2 class="coming-soon-title" data-en="Cybersecurity" data-ar="الأمن السيبراني">الأمن السيبراني</h2>
+                    <p class="coming-soon-description" data-en="Projects and expertise in cybersecurity and system protection are coming soon..." data-ar="مشاريع وخبرات في مجال الأمن السيبراني وحماية الأنظمة قادمة قريباً...">مشاريع وخبرات في مجال الأمن السيبراني وحماية الأنظمة قادمة قريباً...</p>
+                    <div class="coming-soon-badge">
+                        <span data-en="Soon" data-ar="قريباً">قريباً</span>
+                    </div>
+                    <div class="skills-preview">
+                        <div class="skill-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Security Analysis</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bug"></i>
+                            <span>Penetration Testing</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Network Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">تواصل معي</h2>
+                <p class="section-subtitle" data-en="Have a project? Let's talk!" data-ar="هل لديك مشروع؟ دعنا نتحدث!">هل لديك مشروع؟ دعنا نتحدث!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-en="Email" data-ar="البريد الإلكتروني">البريد الإلكتروني</h4>
+                            <p>ahmed.ashraf@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-en="Phone" data-ar="الهاتف">الهاتف</h4>
+                            <p>+20 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-en="Location" data-ar="الموقع">الموقع</h4>
+                            <p>القاهرة، مصر</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="الاسم" data-en-placeholder="Name" data-ar-placeholder="الاسم" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" data-en-placeholder="Email" data-ar-placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="الموضوع" data-en-placeholder="Subject" data-ar-placeholder="الموضوع" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="الرسالة" data-en-placeholder="Message" data-ar-placeholder="الرسالة" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-en="Send Message" data-ar="إرسال الرسالة">إرسال الرسالة</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-en="&copy; 2024 Ahmed Ashraf. All Rights Reserved." data-ar="&copy; 2024 أحمد أشرف. جميع الحقوق محفوظة.">&copy; 2024 أحمد أشرف. جميع الحقوق محفوظة.</p>
+                <p data-en="Developed with <i class='fas fa-heart'></i> using the latest technologies" data-ar="تم التطوير بـ <i class='fas fa-heart'></i> باستخدام أحدث التقنيات">تم التطوير بـ <i class="fas fa-heart"></i> باستخدام أحدث التقنيات</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
