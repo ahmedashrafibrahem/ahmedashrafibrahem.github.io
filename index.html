@@ -1,1227 +1,583 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="أحمد أشرف - مطور فرونت إند">
-    <meta name="robots" content="index, follow">
-    <title>أحمد أشرف - مطور فرونت إند | متخصص في الذكاء الاصطناعي والأمن السيبراني</title>
-    <meta name="keywords" content="أحمد أشرف, مطور فرونت إند, AI, الأمن السيبراني, Angular, React, Vue.js, JavaScript, Python, تطوير ويب, بورتفوليو, مشاريع برمجية, تصميم واجهات">    
-    <meta name="description" content="أحمد أشرف، مطور فرونت إند متخصص وخبير في الذكاء الاصطناعي والأمن السيبراني. أقدم حلول ويب إبداعية ومتجاوبة باستخدام أحدث التقنيات. استعرض مشاريعي في Angular وReact وVue.js.">
-    
-    <meta property="og:title" content="أحمد أشرف | مطور فرونت إند، AI، أمن سيبراني">
-    <meta property="og:description" content="مطور فرونت إند متخصص في Angular وReact، مع خبرة في الذكاء الاصطناعي والأمن السيبراني. اكتشف مشاريعي وحلولي التقنية.">
-    <meta property="og:image" content="assets/img/hero-1.png">
-    <meta property="og:url" content="https://http://gwwad.me/"> <!-- Replace with your actual portfolio URL -->
-    <meta property="og:type" content="website">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="أحمد أشرف | مطور فرونت إند، AI، أمن سيبراني">
-    <meta name="twitter:description" content="تطوير فرونت إند، ذكاء اصطناعي، أمن سيبراني، وبناء حلول ويب مبتكرة مع أحمد أشرف.">
-    <meta name="twitter:image" content="assets/img/hero-1.png">
-    
-    <link rel="icon" href="assets/img/hero-1.png" type="image/png">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "أحمد أشرف",
-          "url": "https://http://gwwad.me/", <!-- Replace with your actual portfolio URL -->
-          "image": "assets/img/hero-1.png",
-          "sameAs": [
-            "https://www.linkedin.com/in/ahmedashrafibrahim1mnoomidooashraf/", <!-- Replace with your LinkedIn profile -->
-            "https://github.com/ahmedashrafibrahem", <!-- Replace with your GitHub profile -->
-            "https://twitter.com/mnoomidooashraf"  <!-- Replace with your Twitter profile -->
-          ],
-          "jobTitle": "Frontend Developer, AI & Cybersecurity Specialist",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Freelance"
-          },
-          "alumniOf": "Your University Name", <!-- Replace with your university name -->
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "القاهرة",
-            "addressCountry": "EG"
-          },
-          "email": "mnoomidoostar6@gmail.com",
-          "telephone": "+20 102 684 3062"
-        }
-        </script>
-</head>
-<body>
-    <div class="loading-overlay" id="loadingOverlay">
-        <div class="loading-spinner">
-            <div class="spinner-circle"></div>
-            <div class="spinner-inner"></div>
-        </div>
-        <p class="loading-text" data-en="Preparing Your Unique Experience..." data-ar="جاري تحضير تجربتك المميزة...">جاري تحضير تجربتك المميزة...</p>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ahmed Ashraf Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+/* Layout: dark canvas with a live node network; every section is one step of a workflow that ends in "contact" */
+:root{
+  --bg:#0B0B0F; --surface:#15151B; --surface2:#1C1C24; --line:#2A2A33;
+  --fg:#F2EFE9; --muted:#9A968E;
+  --accent:#FF5B2E; --live:#D4FF3A;
+  --display:"Space Grotesk","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --body:"Inter","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --mono:"JetBrains Mono","IBM Plex Sans Arabic",ui-monospace,monospace;
+  color-scheme:dark;
+}
+html[lang="ar"]{--display:"IBM Plex Sans Arabic",system-ui,sans-serif;--body:"IBM Plex Sans Arabic",system-ui,sans-serif;--mono:"IBM Plex Sans Arabic",ui-monospace,monospace}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .big{letter-spacing:0!important;line-height:1.15!important}
+html[lang="ar"] .eyebrow,html[lang="ar"] .links{letter-spacing:0;text-transform:none}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 var(--body);overflow-x:hidden;cursor:none}
+@media (hover:none){body{cursor:auto}.cursor{display:none}}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:120px;position:relative;z-index:2}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+h2{font:700 clamp(36px,6vw,72px)/1.02 var(--display);letter-spacing:-.03em;margin:18px 0 20px;text-wrap:balance}
+.lead{color:var(--muted);max-width:620px;font-size:18px;margin:0 0 56px}
+
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+html[dir="rtl"] .progress{transform-origin:100% 50%}
+.cursor{position:fixed;top:0;left:0;width:36px;height:36px;border:1px solid var(--accent);border-radius:50%;pointer-events:none;z-index:100;transform:translate(-50%,-50%);transition:width .25s,height .25s,background .25s;mix-blend-mode:difference}
+.cursor.big{width:80px;height:80px;background:var(--accent)}
+.loader{position:fixed;inset:0;z-index:90;background:var(--bg);display:grid;place-items:center}
+.loader span{font:700 clamp(40px,10vw,120px)/1 "Space Grotesk",sans-serif;letter-spacing:-.04em;display:flex;overflow:hidden;direction:ltr}
+.loader span i{font-style:normal;display:inline-block}
+.loader b{color:var(--accent)}
+#net{position:fixed;inset:0;z-index:0;pointer-events:none}
+
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;padding-block:16px;transition:background .3s,backdrop-filter .3s}
+nav.solid{background:rgba(11,11,15,.75);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.logo{font:700 22px "Space Grotesk",sans-serif}
+.logo b{color:var(--accent)}
+.links{display:flex;gap:26px;font:500 13px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.links a:hover{color:var(--fg)}
+.navr{display:flex;gap:10px;align-items:center}
+.lang{border:1px solid var(--line);border-radius:99px;background:none;padding:10px 16px;cursor:none;font:500 13px var(--mono)}
+.lang:hover{border-color:var(--accent)}
+@media (max-width:900px){.links{display:none}}
+@media (max-width:480px){.navr .btn{display:none}}
+
+.hero{min-height:92vh;display:flex;align-items:center;padding-top:140px}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:99px;padding:8px 16px;font:500 13px var(--mono);color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--live);box-shadow:0 0 10px var(--live);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.hero h1{font:700 clamp(52px,11vw,160px)/.95 var(--display);letter-spacing:-.05em;margin:28px 0}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .line>span{display:inline-block}
+.swap{color:var(--accent);display:inline-block}
+.role{font:500 14px var(--mono);letter-spacing:.06em;margin-bottom:12px}
+.hero p{max-width:580px;color:var(--muted);font-size:18px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:99px;font:500 15px var(--display);border:1px solid var(--line);background:none;cursor:none;transition:background .3s,color .3s,border-color .3s}
+.btn.solid{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.btn:hover{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.btn:focus-visible,.lang:focus-visible,.faq button:focus-visible{outline:2px solid var(--live);outline-offset:3px}
+.proof{display:flex;gap:28px;flex-wrap:wrap;margin-top:48px;font:500 13px var(--mono);color:var(--muted)}
+.proof b{color:var(--fg);font-family:var(--display);font-size:22px;display:block}
+
+.marquee{padding-block:26px;border-block:1px solid var(--line);overflow:hidden;position:relative;z-index:2;background:var(--bg);direction:ltr}
+.track{display:flex;gap:56px;white-space:nowrap;font:700 clamp(28px,4vw,52px)/1 "Space Grotesk","IBM Plex Sans Arabic",sans-serif;letter-spacing:-.02em;width:max-content}
+.track span{display:flex;align-items:center;gap:56px}
+.track span::after{content:"✦";color:var(--accent);font-size:.6em}
+.track.out span{color:transparent;-webkit-text-stroke:1px var(--muted)}
+
+.about-text{font:500 clamp(24px,3.4vw,44px)/1.3 var(--display);letter-spacing:-.02em;max-width:1000px}
+.about-text .w{opacity:.18}
+.about-text em{font-style:normal;color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);margin-top:80px;border:1px solid var(--line)}
+.stat{background:var(--bg);padding:32px}
+.stat b{font:700 clamp(48px,6vw,80px)/1 "Space Grotesk",sans-serif;letter-spacing:-.04em;display:block;font-variant-numeric:tabular-nums}
+.stat b sup{color:var(--accent);font-size:.45em}
+.stat small{font:500 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+
+/* problems */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.pcard{border:1px solid var(--line);border-radius:22px;padding:28px;background:var(--bg);display:flex;flex-direction:column;gap:14px;min-width:0;transition:border-color .3s,transform .3s}
+.pcard:hover{border-color:var(--accent);transform:translateY(-4px)}
+.pcard .pain{font:500 13px var(--mono);color:var(--muted);text-decoration:line-through;text-decoration-color:var(--accent)}
+.pcard h3{font:700 24px/1.2 var(--display);margin:0}
+.pcard .fix{font:500 13px var(--mono);color:var(--live)}
+
+.cards{display:flex;flex-direction:column;gap:24px}
+.card{position:sticky;top:calc(110px + var(--i)*24px);background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:auto 1fr;gap:32px;min-height:340px}
+.card .num{font:500 14px var(--mono);color:var(--accent)}
+.card h3{font:700 clamp(30px,4.5vw,56px)/1.05 var(--display);letter-spacing:-.03em;margin:0 0 18px}
+.card p{color:var(--muted);max-width:620px;margin:0}
+.card ul{margin:20px 0 0;padding:0;list-style:none;display:grid;gap:8px;color:var(--fg)}
+.card li::before{content:"→ ";color:var(--accent)}
+html[dir="rtl"] .card li::before{content:"← "}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;direction:ltr;justify-content:flex-start}
+html[dir="rtl"] .tags{justify-content:flex-end}
+.tags span{font:500 12px "JetBrains Mono",monospace;border:1px solid var(--line);border-radius:99px;padding:6px 12px}
+@media (max-width:600px){.card{grid-template-columns:1fr;gap:12px}}
+
+.flow{overflow-x:auto;padding-bottom:12px;direction:ltr}
+.flow svg{display:block;min-width:900px;width:100%;height:auto}
+.node rect{fill:var(--surface);stroke:var(--line);stroke-width:1.5;transition:stroke .3s}
+.node.on rect{stroke:var(--accent)}
+.node text{fill:var(--fg);font:700 18px var(--display)}
+.node .sub{fill:var(--muted);font:400 12px var(--mono)}
+.node .dot{fill:var(--line)}
+.node.on .dot{fill:var(--live)}
+.wire{fill:none;stroke:var(--accent);stroke-width:2}
+.wire-bg{fill:none;stroke:var(--line);stroke-width:2;stroke-dasharray:4 6}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:40px}
+.steps div{border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:15px;min-width:0}
+.steps b{display:block;color:var(--fg);font:700 18px var(--display);margin-bottom:6px}
+
+.hscroll{height:100vh;overflow:hidden;display:flex;align-items:center;position:relative;z-index:2;direction:ltr}
+.htrack{display:flex;gap:32px;padding-left:max(16px,calc((100vw - 1200px)/2 + 16px));padding-right:10vw}
+.pintro{flex:0 0 min(420px,80vw);display:flex;flex-direction:column;justify-content:center}
+.proj{flex:0 0 min(620px,84vw);background:var(--surface);border:1px solid var(--line);border-radius:28px;overflow:hidden;display:flex;flex-direction:column}
+.proj .img{aspect-ratio:16/10;max-width:100%;overflow:hidden;background:var(--bg)}
+.proj .img canvas{width:110%;height:100%;display:block}
+.proj .img img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.proj:hover .img img{transform:scale(1.05)}
+.proj .meta{padding:28px;display:flex;flex-direction:column;gap:10px}
+.proj .row{display:flex;justify-content:space-between;font:500 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.proj h3{font:700 32px/1.1 var(--display);margin:0;letter-spacing:-.02em}
+.proj p{color:var(--muted);margin:0}
+.proj .result{font:500 14px var(--mono);color:var(--live)}
+.live{color:var(--live)}
+
+/* industries */
+.ind{display:flex;flex-wrap:wrap;gap:12px}
+.ind span{border:1px solid var(--line);border-radius:99px;padding:14px 24px;font:500 18px var(--display);transition:background .3s,color .3s}
+.ind span:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.why div{background:var(--bg);padding:32px;min-width:0}
+.why b{font:700 22px var(--display);display:block;margin-bottom:8px}
+.why p{color:var(--muted);margin:0}
+.why i{font-style:normal;font:500 12px "JetBrains Mono",monospace;color:var(--accent);display:block;margin-bottom:20px}
+
+/* packages */
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;align-items:stretch}
+.pack{border:1px solid var(--line);border-radius:28px;padding:32px;background:var(--surface);display:flex;flex-direction:column;gap:16px;min-width:0}
+.pack.hot{border-color:var(--accent);background:linear-gradient(180deg,rgba(255,91,46,.12),var(--surface) 60%)}
+.pack .badge{align-self:flex-start;font:500 12px var(--mono);background:var(--accent);color:var(--bg);border-radius:99px;padding:4px 12px}
+.pack h3{font:700 28px var(--display);margin:0}
+.pack .for{color:var(--muted);margin:0}
+.pack ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;flex:1}
+.pack li::before{content:"✓  ";color:var(--live)}
+.pack .time{font:500 13px var(--mono);color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+
+/* faq */
+.faq{max-width:860px;display:grid;gap:0}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:none;display:flex;justify-content:space-between;gap:16px;padding:24px 0;font:500 clamp(18px,2.2vw,24px)/1.3 var(--display)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font-size:28px;line-height:1;transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{color:var(--muted);margin:0 0 24px;max-width:680px}
+
+/* contact */
+.contact{padding-block:140px}
+.big{font:700 clamp(64px,15vw,220px)/.9 var(--display);letter-spacing:-.06em;margin:0}
+.big span{color:var(--accent)}
+.cgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;margin-top:64px}
+@media (max-width:860px){.cgrid{grid-template-columns:1fr}}
+form{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:32px;display:grid;gap:16px;min-width:0}
+label{font:500 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em;display:grid;gap:8px}
+input,select,textarea{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--fg);font:400 16px var(--body);width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+textarea{min-height:110px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips label{text-transform:none;letter-spacing:0;font:500 14px var(--body);color:var(--fg);border:1px solid var(--line);border-radius:99px;padding:10px 16px;cursor:none;display:block}
+.chips input:checked+label{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.chips input:focus-visible+label{outline:2px solid var(--live)}
+.note{font-size:14px;color:var(--muted);margin:0}
+.info{display:grid;gap:24px;align-content:start}
+.ci{border-top:1px solid var(--line);padding-top:16px;min-width:0}
+.ci small{font:500 12px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.ci div{font:500 20px var(--display);word-break:break-word;margin-top:6px;direction:ltr;text-align:start}
+html[dir="rtl"] .ci div{text-align:right}
+.copy{font:500 12px var(--mono);border:1px solid var(--line);border-radius:99px;background:none;padding:4px 10px;margin-inline-start:8px;cursor:none;vertical-align:middle}
+
+.float{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:70;background:var(--live);color:var(--bg);border-radius:99px;padding:14px 20px;font:700 15px var(--display);display:flex;align-items:center;gap:8px;box-shadow:0 10px 40px rgba(212,255,58,.25)}
+html[dir="rtl"] .float{right:auto;left:calc(20px + env(safe-area-inset-left,0px))}
+.float i{width:8px;height:8px;border-radius:50%;background:var(--bg);animation:pulse 1.4s infinite}
+footer{border-top:1px solid var(--line);padding-block:28px;font:400 13px var(--mono);color:var(--muted);position:relative;z-index:2;background:var(--bg)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* hero grid + photo */
+.hgrid{display:grid;grid-template-columns:1.35fr .9fr;gap:48px;align-items:center}
+.hgrid>div{min-width:0}
+.slogan{font:700 clamp(18px,2.2vw,24px)/1.4 "IBM Plex Sans Arabic",sans-serif;color:var(--fg);margin:22px 0 0;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.slogan b{color:var(--accent)}
+.slogan small{font:400 14px var(--body);color:var(--muted)}
+.photo{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:32px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(120% 80% at 30% 20%,rgba(255,91,46,.35),transparent 60%),var(--surface)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(.15) contrast(1.05)}
+.photo .ph{position:absolute;inset:0;display:grid;place-items:center;font:700 120px "Space Grotesk",sans-serif;color:rgba(242,239,233,.12)}
+.photo .tag{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(11,11,15,.8);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.photo .tag b{font:700 16px var(--display);display:block}
+.photo .tag span{font:400 12px var(--mono);color:var(--muted)}
+.photo .tag i{font-style:normal;font:500 12px var(--mono);color:var(--live);white-space:nowrap}
+.orbit{position:absolute;top:18px;right:18px;background:var(--accent);color:var(--bg);border-radius:99px;padding:8px 14px;font:700 13px var(--display)}
+html[dir="rtl"] .orbit{right:auto;left:18px}
+.guarantee{display:flex;gap:10px;align-items:center;margin-top:18px;font-size:14px;color:var(--muted)}
+.guarantee::before{content:"✓";color:var(--live);font-weight:700}
+/* mobile menu */
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:none;cursor:none;place-items:center}
+.burger span{display:block;width:18px;height:2px;background:var(--fg);box-shadow:0 6px 0 var(--fg),0 -6px 0 var(--fg)}
+.mmenu{position:fixed;inset:0;z-index:80;background:var(--bg);display:flex;flex-direction:column;justify-content:center;gap:18px;padding:80px max(24px,env(safe-area-inset-left,0px));transform:translateY(-100%);transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.mmenu.open{transform:none}
+.mmenu a{font:700 40px/1.1 var(--display)}
+.mmenu .close{position:absolute;top:calc(20px + env(safe-area-inset-top,0px));right:20px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:none;font-size:22px}
+html[dir="rtl"] .mmenu .close{right:auto;left:20px}
+.vflow{display:none}
+@media (max-width:900px){
+  .burger{display:grid}
+  .hgrid{grid-template-columns:1fr;gap:36px}
+  .photo{max-width:420px;aspect-ratio:1/1}
+}
+@media (max-width:700px){
+  section{padding-block:80px}
+  .hero{padding-top:110px;min-height:auto;padding-bottom:40px}
+  .hero h1{font-size:clamp(46px,15vw,72px)}
+  .hero p,.lead{font-size:16px}
+  .ctas .btn{flex:1 1 100%;justify-content:center}
+  .proof{gap:20px}
+  .stat{padding:22px}
+  .card{position:relative;top:auto;min-height:0}
+  .flow{display:none}
+  .vflow{display:grid;gap:0;border-inline-start:2px dashed var(--line);margin-inline-start:8px}
+  .vflow div{position:relative;padding:0 0 26px 24px}
+  html[dir="rtl"] .vflow div{padding:0 24px 26px 0}
+  .vflow div::before{content:"";position:absolute;inset-inline-start:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+  .vflow b{font:700 20px var(--display);display:block}
+  .vflow span{color:var(--muted);font-size:14px}
+  .hscroll{padding-block:0}
+  .htrack{gap:16px;padding-left:max(16px,env(safe-area-inset-left,0px))}
+  .pintro{flex:0 0 78vw}.proj{flex:0 0 82vw}
+  .proj .meta{padding:20px;gap:8px}.proj p{font-size:14px}
+  .proj h3{font-size:26px}
+  .contact{padding-block:90px}
+  .big{font-size:clamp(56px,18vw,96px)}
+  form{padding:22px}
+  .float{padding:14px 16px}
+  .float span{display:none}
+  .marquee{padding-block:16px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hscroll{overflow-x:auto}.about-text .w{opacity:1}}
+</style>
+
+<div class="progress" id="progress"></div>
+<div class="loader" id="loader"><span id="lw"></span></div>
+<div class="cursor" id="cursor"></div>
+<canvas id="net"></canvas>
+
+<nav id="nav"><div class="wrap">
+  <a class="logo" href="#top">Ahmed<b>.</b></a>
+  <div class="links">
+    <a href="#about" data-ar="عني">About</a><a href="#services" data-ar="الخدمات">Services</a><a href="#work" data-ar="أعمالي">Work</a><a href="#packages" data-ar="الباقات">Packages</a><a href="#faq" data-ar="الأسئلة">FAQ</a>
+  </div>
+  <div class="navr">
+    <button class="lang" id="langBtn" type="button" aria-label="Switch language">عربي</button>
+    <a class="btn solid mag" href="#contact" data-ar="ابدأ مشروعك">Start a project</a>
+    <button class="burger" id="burger" type="button" aria-label="Menu"><span></span></button>
+  </div>
+</div></nav>
+
+<div class="mmenu" id="mmenu"><button class="close" id="mclose" type="button" aria-label="Close">✕</button>
+  <a href="#about" data-ar="عني">About</a><a href="#services" data-ar="الخدمات">Services</a><a href="#work" data-ar="أعمالي">Work</a><a href="#packages" data-ar="الباقات">Packages</a><a href="#faq" data-ar="الأسئلة">FAQ</a><a href="#contact" style="color:var(--accent)" data-ar="تواصل معايا">Contact</a></div>
+<header class="hero" id="top"><div class="wrap hgrid"><div>
+  <div class="status"><i></i><span data-ar="متاح لـ ٣ مشاريع جديدة الشهر ده">3 project slots open this month</span></div>
+  <h1>
+    <span class="line"><span data-ar="ببنيلك">I build</span></span>
+    <span class="line"><span class="swap" id="swap">platforms</span></span>
+  </h1>
+  <div class="role" data-ar="مطوّر ويب · مهندس n8n · صانع حلول">WEB DEVELOPER · N8N ENGINEER · SOLUTION FINDER</div>
+  <p data-ar="وقتك أغلى من إنه يضيع في شغل يدوي. ببنيلك موقع أو منصة أو نظام أتمتة يشتغل بدالك ٢٤ ساعة، ويجيبلك عملاء وانت مركز في شغلك.">Your time is too expensive to waste on manual work. I build the website, platform or automation that works for you 24/7 and brings in clients while you focus on the business.</p>
+  <div class="ctas">
+    <a class="btn solid mag" href="#contact" data-ar="احجز مكالمة مجانية ٣٠ دقيقة ←">Book a free 30-min call →</a>
+    <a class="btn mag" href="#work" data-ar="شوف ٢٥+ مشروع">See 25+ projects</a>
+  </div>
+  <div class="guarantee" data-ar="عرض بسعر ثابت خلال ٤٨ ساعة · من غير أي التزام">Fixed-price proposal in 48 hours · no commitment</div>
+  <p class="slogan" dir="rtl"><span>البرمجة كود ... <b>بس الهندسة موجود</b></span></p>
+</div>
+<div><div class="photo" id="photo"><img src="img/me.webp" alt="Ahmed Ashraf" width="900" height="900"><span class="orbit" data-ar="٦+ سنين">6+ yrs</span>
+  <div class="tag"><div><b data-ar="أحمد أشرف">Ahmed Ashraf</b><span data-ar="القاهرة · ريموت للخليج">Cairo · remote across GCC</span></div><i data-ar="● متاح">● Available</i></div></div></div>
+</div></header>
+
+<div class="marquee"><div class="track" id="m1">
+  <span>React</span><span>Angular</span><span>Vue.js</span><span>Next.js</span><span>n8n</span><span>Node.js</span><span>Laravel</span><span>MongoDB</span><span>Socket.io</span><span>Python</span>
+  <span>React</span><span>Angular</span><span>Vue.js</span><span>Next.js</span><span>n8n</span><span>Node.js</span><span>Laravel</span><span>MongoDB</span><span>Socket.io</span><span>Python</span>
+</div></div>
+<div class="marquee"><div class="track out" id="m2">
+  <span>E-learning</span><span>E-commerce</span><span>Dashboards</span><span>WhatsApp bots</span><span>AI agents</span><span>Cybersecurity</span>
+  <span>E-learning</span><span>E-commerce</span><span>Dashboards</span><span>WhatsApp bots</span><span>AI agents</span><span>Cybersecurity</span>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <div class="eyebrow" data-ar="عني · أحمد أشرف إبراهيم عبدالجواد">About · Ahmed Ashraf Ibrahim Abdel Gawwad</div>
+  <p class="about-text" id="aboutText" data-ar="من ست سنين وأنا بحوّل مشاكل البيزنس المعقدة إلى <em>أنظمة شغالة</em>. مش بكتب كود وبس. بدور على المكان اللي بيضيع فيه وقتك وفلوسك، وبوصّل القطع ببعض بمنصات وأتمتة تفضل شغالة وانت نايم. درست أمن معلومات، وبدأت بالذكاء الاصطناعي، ودرّبت أكتر من ١٠٠ طالب برمجة قبل ما أتفرغ للبناء.">For six years I have turned messy business problems into <em>working systems</em>. I don't just write code. I find where your time and money leak, then connect the pieces with platforms and automations that keep running while you sleep. I studied cybersecurity, started in AI, and taught programming to more than 100 students before building full time.</p>
+  <div class="stats">
+    <div class="stat"><b><span class="count" data-to="6">6</span><sup>+</sup></b><small data-ar="سنين خبرة">Years building</small></div>
+    <div class="stat"><b><span class="count" data-to="25">25</span><sup>+</sup></b><small data-ar="مشروع اتسلّم">Projects delivered</small></div>
+    <div class="stat"><b><span class="count" data-to="100">100</span><sup>+</sup></b><small data-ar="طالب درّبتهم برمجة">Students trained in coding</small></div>
+    <div class="stat"><b><span class="count" data-to="2">2</span></b><small data-ar="أسواق · مصر والخليج">Markets · EG &amp; GCC</small></div>
+  </div>
+</div></section>
+
+<section id="problems" style="padding-top:40px"><div class="wrap">
+  <div class="eyebrow" data-ar="المشكلة">The problem</div>
+  <h2 data-ar="كل يوم من غير نظام = فلوس ضايعة">Every day without a system costs you money</h2>
+  <p class="lead" data-ar="لو لقيت نفسك في واحدة من دول، يبقى عندك فلوس ووقت بيضيعوا كل يوم. والحل جاهز.">If you see your business in one of these, you are losing time and money every day. Each one has a ready fix.</p>
+  <div class="pgrid">
+    <div class="pcard"><span class="pain" data-ar="بترد على نفس الأسئلة طول اليوم">Answering the same questions all day</span><h3 data-ar="بوت واتساب بيرد ويحجز لوحده">A WhatsApp bot that replies and books for you</h3><span class="fix" data-ar="→ n8n + ذكاء اصطناعي">→ n8n + AI</span></div>
+    <div class="pcard"><span class="pain" data-ar="الكورسات متفرقة بين جروبات ودرايف">Courses scattered across groups and Drive</span><h3 data-ar="منصة تعليمية باسمك وبراندك">Your own branded e-learning platform</h3><span class="fix" data-ar="→ كورسات، امتحانات، اشتراكات">→ courses, exams, subscriptions</span></div>
+    <div class="pcard"><span class="pain" data-ar="الحجوزات على ورق وإكسيل">Bookings on paper and Excel</span><h3 data-ar="نظام حجز وإدارة عملاء أونلاين">An online booking and client system</h3><span class="fix" data-ar="→ SaaS بلوحة تحكم">→ SaaS with dashboard</span></div>
+    <div class="pcard"><span class="pain" data-ar="عملاء بيضيعوا من الإعلانات">Leads lost between ads and sales</span><h3 data-ar="كل lead يوصل للـ CRM ويتابع تلقائي">Every lead lands in your CRM with auto follow-up</h3><span class="fix" data-ar="→ Webhooks + CRM">→ webhooks + CRM</span></div>
+    <div class="pcard"><span class="pain" data-ar="موقع قديم ومحدش بيلاقيك على جوجل">An old site nobody finds on Google</span><h3 data-ar="موقع سريع بلغتين وجاهز للـ SEO">A fast bilingual site built for SEO</h3><span class="fix" data-ar="→ Next.js">→ Next.js</span></div>
+    <div class="pcard"><span class="pain" data-ar="تقارير يدوية كل أسبوع">Manual reports every week</span><h3 data-ar="داشبورد وتقارير بتتبعت لوحدها">Dashboards and reports that send themselves</h3><span class="fix" data-ar="→ أتمتة جدولة">→ scheduled automation</span></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="eyebrow" data-ar="الخدمات">Services</div>
+  <h2 data-ar="اللي ببنيه">What I build</h2>
+  <div class="cards">
+    <div class="card" style="--i:0"><div class="num">/01</div><div><h3 data-ar="منصات ويب">Web platforms</h3><p data-ar="مواقع وتطبيقات ويب سريعة بـ React و Next.js، عربي وإنجليزي بـ RTL كامل، وجاهزة للـ SEO.">Fast websites and web apps in React and Next.js, Arabic and English with full RTL, ready for SEO.</p><ul><li data-ar="مواقع شركات ولاندينج بيدجز">Company sites and landing pages</li><li data-ar="لوحات تحكم وأنظمة داخلية">Dashboards and internal tools</li><li data-ar="ربط بوابات دفع">Payment gateway integration</li></ul><div class="tags"><span>React</span><span>Next.js</span><span>Node.js</span><span>RTL</span></div></div></div>
+    <div class="card" style="--i:1"><div class="num">/02</div><div><h3 data-ar="منصات تعليمية">E-learning platforms</h3><p data-ar="منصة كاملة للمدرسين والأكاديميات: كورسات، حماية فيديو، امتحانات، اشتراكات، ولوحة للطالب.">Complete platforms for teachers and academies: courses, video protection, exams, subscriptions and student dashboards.</p><ul><li data-ar="حماية الفيديوهات من التسريب">Video leak protection</li><li data-ar="امتحانات وتصحيح تلقائي">Exams with auto grading</li><li data-ar="اشتراكات ودفع أونلاين">Subscriptions and online payment</li></ul><div class="tags"><span>LMS</span><span>Exams</span><span>Payments</span><span>Analytics</span></div></div></div>
+    <div class="card" style="--i:2"><div class="num">/03</div><div><h3 data-ar="أتمتة n8n">n8n automation</h3><p data-ar="workflows بتوصّل أدواتك ببعض وتشيل الشغل المتكرر: leads للـ CRM، ردود واتساب، تقارير، ووكلاء ذكاء اصطناعي.">Workflows that connect your tools and remove repeated work: leads into CRM, WhatsApp replies, reports and AI agents.</p><ul><li data-ar="بوتات واتساب وتليجرام">WhatsApp and Telegram bots</li><li data-ar="وكلاء AI بيردوا من بياناتك">AI agents that answer from your data</li><li data-ar="ربط أي API ببعض">Connect any API to any other</li></ul><div class="tags"><span>n8n</span><span>WhatsApp API</span><span>OpenAI</span><span>Webhooks</span></div></div></div>
+    <div class="card" style="--i:3"><div class="num">/04</div><div><h3 data-ar="أنظمة SaaS">SaaS systems</h3><p data-ar="منتجات لأكتر من عميل زي نظام حجز العيادات وملفات المرضى، بتشتغل أونلاين وأوفلاين.">Multi-tenant products like clinic booking and patient records, designed to work online and offline.</p><ul><li data-ar="حجز ومواعيد">Booking and scheduling</li><li data-ar="ملفات وتقارير">Records and reports</li><li data-ar="وضع أوفلاين">Offline mode</li></ul><div class="tags"><span>Booking</span><span>Multi-tenant</span><span>Offline-first</span></div></div></div>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="eyebrow" data-ar="طريقة الشغل">Process</div>
+  <h2 data-ar="إزاي بحل المشكلة">How I solve it</h2>
+  <p class="lead" data-ar="خمس خطوات واضحة. بتعرف إحنا فين في كل لحظة.">Five clear steps. You always know where we are.</p>
+  <div class="flow"><svg viewBox="0 0 1100 220" id="flowSvg" role="img" aria-label="Problem, Analyze, Build, Automate, Grow"></svg></div>
+  <div class="vflow" id="vflow"></div>
+  <div class="steps">
+    <div><b data-ar="مكالمة ٣٠ دقيقة">30-minute call</b><span data-ar="نفهم المشكلة والهدف. مجانًا.">We define the problem and the goal. Free.</span></div>
+    <div><b data-ar="عرض واضح">Clear proposal</b><span data-ar="نطاق، مدة، وسعر ثابت خلال ٤٨ ساعة.">Scope, timeline and a fixed price within 48 hours.</span></div>
+    <div><b data-ar="تسليم أسبوعي">Weekly delivery</b><span data-ar="بتشوف تقدم حقيقي كل أسبوع.">You see real progress every week.</span></div>
+    <div><b data-ar="دعم بعد التسليم">Support after launch</b><span data-ar="٣٠ يوم دعم وتعديلات.">30 days of support and fixes.</span></div>
+  </div>
+</div></section>
+
+<section class="hscroll" id="work">
+  <div class="htrack" id="htrack">
+    <div class="pintro"><div class="eyebrow" data-ar="أعمال مختارة">Selected work</div><h2 data-ar="أنظمة شغالة فعلًا">Systems in production</h2><p style="color:var(--muted)" data-ar="كمّل سكرول عشان تتنقل بين المشاريع.">Keep scrolling to move through the projects.</p></div>
+    <article class="proj"><div class="img"><img src="img/prof.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="تعليم أونلاين">E-learning</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="prof-english.net">prof-english.net</h3><p data-ar="منصة تعليمية كاملة فيها كورسات فيديو واختبارات وتتبع لتقدم الطالب.">Full e-learning platform with video courses, quizzes and progress tracking.</p><span class="result" style="direction:ltr">Angular · Node.js · Socket.io · MongoDB</span><a class="btn mag" href="https://prof-english.net" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><img src="img/nexus.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="تجارة إلكترونية">E-commerce</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="Nexus Pay">Nexus Pay</h3><p data-ar="متجر إلكتروني بلوحة تحكم وأكتر من بوابة دفع، مبني للأمان والسرعة.">E-commerce platform with admin dashboard and multiple payment integrations, built for security and speed.</p><span class="result" style="direction:ltr">Laravel · PHP · MySQL · Vue.js</span><a class="btn mag" href="https://nexus-pay.netlify.app/" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><img src="img/legal.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="بوابة قانونية">Legal portal</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="البوابة القانونية السعودية">Saudi Legal Portal</h3><p data-ar="بتخلي المستخدم يتصفح الأحكام والفتاوى والأنظمة القانونية في السعودية.">Lets users explore rulings, fatwas and legal regulations in Saudi Arabia.</p><span class="result" style="direction:ltr">HTML · CSS · JavaScript</span><a class="btn mag" href="https://blue-flame-team.github.io/Elbawaba2025/" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><img src="img/admin.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="لوحة تحكم">Dashboard</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="لوحة تحكم الإدارة">Admin Dashboard</h3><p data-ar="لوحة إدارة كاملة لإدارة المحتوى والمستخدمين.">A complete admin dashboard for managing content and users.</p><span class="result" style="direction:ltr">HTML · CSS · JavaScript</span><a class="btn mag" href="https://blue-flame-team.github.io/admin/" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><img src="img/law.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="مكتب محاماة">Law firm</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="الحلول القانونية">Solution Law</h3><p data-ar="موقع احترافي لمكتب محاماة.">Professional website for a law firm.</p><span class="result" style="direction:ltr">HTML · CSS · JavaScript</span><a class="btn mag" href="https://solution-law.netlify.app/" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><img src="img/estate.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="عقارات">Real estate</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="عقارات فاخرة">Luxury Real Estate</h3><p data-ar="موقع عقارات بمعارض صور وتفاصيل كاملة لكل وحدة.">Real estate site with photo galleries and detailed listings.</p><span class="result" style="direction:ltr">HTML · CSS · JavaScript</span><a class="btn mag" href="https://luxury-real-estate-website.netlify.app/" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><img src="img/edu.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="تعليم">Education</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="Future Edu">Future Edu</h3><p data-ar="منصة بتساعد الطلاب في التقديم للجامعات.">Platform that helps students with university admissions.</p><span class="result" style="direction:ltr">HTML · CSS · JavaScript</span><a class="btn mag" href="https://blue-flame-team.github.io/Education-LandingPage/" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><img src="img/hatem.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="بورتفوليو شخصي">Personal brand</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="أحمد حاتم الديب">Ahmed Hatem Eldib</h3><p data-ar="موقع شخصي لاستشاري تسويق وأعمال، مؤسس Marketing Mindset.">Personal site for a marketing and business consultant, founder of Marketing Mindset.</p><span class="result" style="direction:ltr">HTML · CSS · JavaScript</span><a class="btn mag" href="https://blue-flame-team.github.io/Ahmed-Hatem-Eldib/" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><img src="img/agri.webp" alt="" loading="lazy"></div><div class="meta"><div class="row"><span data-ar="زراعة">Agriculture</span><span class="live" data-ar="● شغال">● Live</span></div><h3 data-ar="أجريبلوم">AgriBloom</h3><p data-ar="موقع لبراند زراعة مستدامة.">Website for a sustainable agriculture brand.</p><span class="result" style="direction:ltr">HTML · CSS · JavaScript</span><a class="btn mag" href="https://agribloom.netlify.app/" target="_blank" rel="noopener" style="align-self:flex-start" data-ar="شوف الموقع ↗">Visit live ↗</a></div></article>
+    <article class="proj"><div class="img"><canvas data-seed="4"></canvas></div><div class="meta"><div class="row"><span data-ar="مشروعك الجاي">Your next project</span><span class="live" data-ar="● متاح">● Open</span></div><h3 data-ar="ممكن يكون مشروعك">This could be yours</h3><p data-ar="قولي المشكلة، وأنا أقولك الحل في مكالمة واحدة.">Tell me the problem and I'll outline the fix in one call.</p><a class="btn solid mag" href="#contact" style="align-self:flex-start" data-ar="ابدأ ←">Start →</a></div></article>
+  </div>
+</section>
+
+<section id="industries"><div class="wrap">
+  <div class="eyebrow" data-ar="المجالات">Industries</div>
+  <h2 data-ar="بشتغل مع">Who I work with</h2>
+  <div class="ind">
+    <span data-ar="مدرسين وأكاديميات">Teachers &amp; academies</span><span data-ar="عيادات ومراكز طبية">Clinics</span><span data-ar="عقارات">Real estate</span><span data-ar="متاجر إلكترونية">E-commerce</span><span data-ar="شركات خدمات">Service businesses</span><span data-ar="وكالات تسويق">Marketing agencies</span><span data-ar="مطاعم وكافيهات">Restaurants &amp; cafés</span><span data-ar="شركات ناشئة">Startups</span>
+  </div>
+</div></section>
+
+<section id="why" style="padding-top:40px"><div class="wrap">
+  <div class="eyebrow" data-ar="ليه أنا">Why me</div>
+  <h2 data-ar="ليه العملاء بيكملوا معايا">Why clients stay with me</h2>
+  <div class="why">
+    <div><i>01</i><b data-ar="بفهم البيزنس الأول">Business first</b><p data-ar="بسأل عن الفلوس والوقت قبل ما أسأل عن الكود.">I ask about money and time before I ask about code.</p></div>
+    <div><i>02</i><b data-ar="مبرمج + أتمتة">Code + automation</b><p data-ar="الموقع والـ workflows من نفس الشخص، فمفيش حلقة مفقودة.">The platform and the workflows come from one person, so nothing falls between teams.</p></div>
+    <div><i>03</i><b data-ar="عربي بجد">Truly Arabic</b><p data-ar="RTL مظبوط ومحتوى مكتوب للسوق المصري والخليجي.">Proper RTL and copy written for the Egyptian and Gulf market.</p></div>
+    <div><i>04</i><b data-ar="سعر ثابت">Fixed price</b><p data-ar="بتعرف التكلفة قبل ما نبدأ، من غير مفاجآت.">You know the cost before we start. No surprises.</p></div>
+  </div>
+</div></section>
+
+<section id="packages"><div class="wrap">
+  <div class="eyebrow" data-ar="الباقات">Packages</div>
+  <h2 data-ar="اختار نقطة البداية">Pick a starting point</h2>
+  <p class="lead" data-ar="كل باقة بسعر ثابت بعد مكالمة التعارف.">Every package gets a fixed quote after the intro call.</p>
+  <div class="packs">
+    <div class="pack"><h3 data-ar="الانطلاقة">Launch</h3><p class="for" data-ar="لو محتاج حضور أونلاين احترافي بسرعة.">For a fast, professional online presence.</p><ul><li data-ar="موقع أو لاندينج بيدج بلغتين">Bilingual site or landing page</li><li data-ar="SEO أساسي">SEO basics</li><li data-ar="فورم وواتساب">Contact form and WhatsApp</li></ul><div class="time" data-ar="المدة: ١–٢ أسبوع">Timeline: 1–2 weeks</div><a class="btn mag pick" href="#contact" data-pack="Launch" data-ar="ابدأ بالباقة دي">Choose Launch</a></div>
+    <div class="pack hot"><span class="badge" data-ar="الأكثر طلبًا">Most requested</span><h3 data-ar="المنصة">Platform</h3><p class="for" data-ar="منصة تعليمية أو نظام SaaS كامل.">A full e-learning platform or SaaS system.</p><ul><li data-ar="لوحة تحكم للأدمن والمستخدم">Admin and user dashboards</li><li data-ar="دفع واشتراكات">Payments and subscriptions</li><li data-ar="٣٠ يوم دعم">30 days of support</li></ul><div class="time" data-ar="المدة: ٤–٨ أسابيع">Timeline: 4–8 weeks</div><a class="btn solid mag pick" href="#contact" data-pack="Platform" data-ar="ابدأ بالباقة دي">Choose Platform</a></div>
+    <div class="pack"><h3 data-ar="الأتمتة">Automate</h3><p class="for" data-ar="لو عندك شغل يدوي بياكل وقتك.">For manual work that eats your week.</p><ul><li data-ar="تحليل العمليات الحالية">Audit of current processes</li><li data-ar="workflows بـ n8n">n8n workflows</li><li data-ar="بوت واتساب أو وكيل AI">WhatsApp bot or AI agent</li></ul><div class="time" data-ar="المدة: ١–٣ أسابيع">Timeline: 1–3 weeks</div><a class="btn mag pick" href="#contact" data-pack="Automate" data-ar="ابدأ بالباقة دي">Choose Automate</a></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="eyebrow" data-ar="أسئلة شائعة">FAQ</div>
+  <h2 data-ar="قبل ما تسأل">Before you ask</h2>
+  <div class="faq">
+    <details><summary data-ar="التكلفة بتبقى كام؟">How much does it cost?</summary><p data-ar="بتختلف حسب الحجم. بعد مكالمة ٣٠ دقيقة بتاخد عرض بسعر ثابت خلال ٤٨ ساعة.">It depends on scope. After a 30-minute call you get a fixed quote within 48 hours.</p></details>
+    <details><summary data-ar="بتشتغل مع عملاء في الخليج؟">Do you work with clients in the Gulf?</summary><p data-ar="أيوه. بشتغل ريموت مع عملاء في مصر والسعودية والإمارات وقطر.">Yes. I work remotely with clients in Egypt, Saudi Arabia, the UAE and Qatar.</p></details>
+    <details><summary data-ar="الموقع هيبقى ملكي؟">Will I own the code?</summary><p data-ar="أيوه، الكود والدومين والبيانات كلها ملكك بعد التسليم.">Yes. The code, domain and data are yours after delivery.</p></details>
+    <details><summary data-ar="يعني إيه n8n وأستفيد منه إزاي؟">What is n8n and why should I care?</summary><p data-ar="أداة بتوصّل برامجك ببعض وتنفذ مهام لوحدها، زي الرد على العملاء أو نقل البيانات أو إرسال التقارير، فبتوفر ساعات كل أسبوع.">A tool that connects your apps and runs tasks on its own, like replying to customers, moving data or sending reports, so you save hours every week.</p></details>
+    <details><summary data-ar="بعد التسليم لو حصلت مشكلة؟">What happens after launch?</summary><p data-ar="فيه ٣٠ يوم دعم مجاني، وبعدها باقة صيانة شهرية لو حابب.">You get 30 days of free support, then an optional monthly maintenance plan.</p></details>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="eyebrow" data-ar="تواصل">Contact</div>
+  <p class="big" data-ar="مشكلتك ليها <span>حل.</span>">Your problem<br>has a <span>fix.</span></p>
+  <div class="cgrid">
+    <form id="cform" novalidate>
+      <label for="fname"><span data-ar="اسمك">Your name</span><input id="fname" autocomplete="name" required></label>
+      <div><label style="margin-bottom:10px" data-ar="محتاج إيه؟">What do you need?</label>
+        <div class="chips" id="chips">
+          <input type="radio" name="need" id="n1" value="Website" checked><label for="n1" data-ar="موقع">Website</label>
+          <input type="radio" name="need" id="n2" value="E-learning platform"><label for="n2" data-ar="منصة تعليمية">E-learning platform</label>
+          <input type="radio" name="need" id="n3" value="n8n automation"><label for="n3" data-ar="أتمتة n8n">n8n automation</label>
+          <input type="radio" name="need" id="n4" value="SaaS system"><label for="n4" data-ar="نظام SaaS">SaaS system</label>
+        </div></div>
+      <label for="fmsg"><span data-ar="احكيلي باختصار">Tell me briefly</span><textarea id="fmsg" data-ph-ar="مثلًا: عندي أكاديمية ومحتاج منصة فيها امتحانات واشتراكات" placeholder="e.g. I run an academy and need a platform with exams and subscriptions"></textarea></label>
+      <button class="btn solid mag" type="submit" style="justify-content:center" data-ar="ابعت على واتساب ←">Send on WhatsApp →</button>
+      <p class="note" id="fnote" data-ar="رسالتك بتتجهز على واتساب. برد بنفسي خلال ٢٤ ساعة، والمكالمة الأولى مجانية.">Your message opens ready in WhatsApp. I reply personally within 24 hours, and the first call is free.</p>
+    </form>
+    <div class="info">
+      <div class="ci"><small data-ar="واتساب">WhatsApp</small><div><span id="phone">+20 102 684 3062</span><button class="copy" type="button" data-copy="phone" data-ar="نسخ">Copy</button></div></div>
+      <div class="ci"><small data-ar="الإيميل">Email</small><div><span id="email">mnoomidoostar6@gmail.com</span><button class="copy" type="button" data-copy="email" data-ar="نسخ">Copy</button></div></div>
+      <div class="ci"><small data-ar="المكان">Based in</small><div data-ar="القاهرة، مصر · ريموت للخليج">Cairo, Egypt · remote across the GCC</div></div>
+      <div class="ctas" style="margin-top:0"><a class="btn mag" href="https://linkedin.com">LinkedIn</a><a class="btn mag" href="https://github.com">GitHub</a></div>
     </div>
-    <!-- AI Chat Widget -->
-    <div class="ai-chat-widget" id="aiChatWidget">
-        <div class="chat-toggle" id="chatToggle">
-            <div class="chat-icon">
-                <i class="fas fa-robot"></i>
-            </div>
-            <div class="chat-pulse"></div>
-        </div>
-        <div class="chat-container" id="chatContainer">
-            <div class="chat-header">
-                <div class="chat-avatar">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <div class="chat-info">
-                    <h4 data-en="Ahmed's AI Assistant" data-ar="مساعد أحمد الذكي">مساعد أحمد الذكي</h4>
-                    <span class="chat-status" data-en="Online" data-ar="متصل">متصل</span>
-                </div>
-                <button class="chat-close" id="chatClose">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="chat-messages" id="chatMessages">
-                <div class="message ai-message">
-                    <div class="message-avatar">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="message-content">
-                        <p data-en="Hello! I'm Ahmed's AI assistant. Ask me anything about his work, skills, or projects!" data-ar="مرحباً! أنا مساعد أحمد الذكي. اسألني أي شيء عن عمله أو مهاراته أو مشاريعه!">مرحباً! أنا مساعد أحمد الذكي. اسألني أي شيء عن عمله أو مهاراته أو مشاريعه!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="chat-input-container">
-                <input type="text" class="chat-input" id="chatInput" placeholder="اكتب رسالتك..." data-en-placeholder="Type your message..." data-ar-placeholder="اكتب رسالتك...">
-                <button class="chat-send" id="chatSend">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
-        </div>
-    </div>
+  </div>
+</div></section>
 
-    <!-- Live Code Editor Widget -->
-    <div class="code-editor-widget" id="codeEditorWidget">
-        <div class="code-toggle" id="codeToggle">
-            <div class="code-icon">
-                <i class="fas fa-code"></i>
-            </div>
-            <div class="code-pulse"></div>
-        </div>
-        <div class="code-container" id="codeContainer">
-            <div class="code-header">
-                <div class="code-title">
-                    <i class="fas fa-terminal"></i>
-                    <span data-en="Live Code Demo" data-ar="عرض أكواد مباشر">عرض أكواد مباشر</span>
-                </div>
-                <div class="code-controls">
-                    <button class="code-run" id="codeRun">
-                        <i class="fas fa-play"></i>
-                        <span data-en="Run" data-ar="تشغيل">تشغيل</span>
-                    </button>
-                    <button class="code-close" id="codeClose">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="code-tabs">
-                <button class="code-tab active" data-lang="html">HTML</button>
-                <button class="code-tab" data-lang="css">CSS</button>
-                <button class="code-tab" data-lang="js">JavaScript</button>
-            </div>
-            <div class="code-editor" id="codeEditor">
-                <textarea id="codeTextarea" spellcheck="false"></textarea>
-                <div class="code-output" id="codeOutput"></div>
-            </div>
-            <div class="code-preview" id="codePreview">
-                <iframe id="previewFrame" sandbox="allow-scripts allow-same-origin"></iframe>
-            </div>
-        </div>
-    </div>
+<a class="float mag" href="#contact"><i></i><span data-ar="كلمني دلوقتي">Talk to me</span></a>
+<footer><div class="wrap"><span data-ar="© ٢٠٢٦ أحمد أشرف">© 2026 Ahmed Ashraf</span><span data-ar="تصميم وتطوير أحمد أشرف">Designed &amp; built by Ahmed Ashraf</span></div></footer>
 
-    <!-- 3D Canvas Background -->
-    <canvas id="threejs-canvas" class="threejs-background"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+const WA='201026843062'; /* put your WhatsApp number here, digits only */
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+gsap.registerPlugin(ScrollTrigger);
 
-    <!-- Interactive Cursor -->
-    <div class="interactive-cursor" id="interactiveCursor">
-        <div class="cursor-dot"></div>
-        <div class="cursor-ring"></div>
-    </div>
+/* language */
+let lang='en';try{lang=localStorage.getItem('lang')||'en'}catch(e){}
+const T=document.querySelectorAll('[data-ar]');T.forEach(el=>el.dataset.en=el.innerHTML);
+const words={en:['platforms','automations','websites','systems'],ar:['منصتك','أتمتتك','موقعك','نظامك']};
+const steps={en:[['Problem','find the leak'],['Analyze','map the process'],['Build','platform & API'],['Automate','n8n workflows'],['Grow','measure & scale']],
+             ar:[['المشكلة','نلاقي التسريب'],['التحليل','نرسم العملية'],['البناء','منصة و API'],['الأتمتة','workflows'],['النمو','نقيس ونكبر']]};
+let wi=0;
+function applyLang(l){lang=l;document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';
+  T.forEach(el=>el.innerHTML=l==='ar'?el.dataset.ar:el.dataset.en);
+  document.querySelectorAll('[data-ph-ar]').forEach(el=>{el.dataset.phEn=el.dataset.phEn||el.placeholder;el.placeholder=l==='ar'?el.dataset.phAr:el.dataset.phEn});
+  document.getElementById('langBtn').textContent=l==='ar'?'English':'عربي';
+  document.getElementById('swap').textContent=words[l][wi];
+  buildFlow();splitAbout();
+  try{localStorage.setItem('lang',l)}catch(e){}
+  setTimeout(()=>ScrollTrigger.refresh(),50);}
+const mm=document.getElementById('mmenu');document.getElementById('burger').addEventListener('click',()=>mm.classList.add('open'));document.getElementById('mclose').addEventListener('click',()=>mm.classList.remove('open'));mm.addEventListener('click',e=>{if(e.target.closest('a'))mm.classList.remove('open')});
+document.getElementById('langBtn').addEventListener('click',()=>applyLang(lang==='en'?'ar':'en'));
 
-    <!-- Advanced Particle System -->
-    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+/* smooth scroll */
+let lenis=null;
+try{lenis=new Lenis({lerp:.09});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0)}catch(e){}
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;const t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();
+  if(a.dataset.pack){document.getElementById('fmsg').value=(lang==='ar'?'مهتم بباقة: ':'Interested in the package: ')+a.dataset.pack}
+  lenis?lenis.scrollTo(t,{offset:-60}):t.scrollIntoView({behavior:'smooth'})});
 
-    <!-- Liquid Morphing Shapes -->
-    <div class="liquid-shapes" id="liquidShapes">
-        <div class="liquid-blob blob-1"></div>
-        <div class="liquid-blob blob-2"></div>
-        <div class="liquid-blob blob-3"></div>
-        <div class="liquid-blob blob-4"></div>
-    </div>
+/* loader */
+const lw=document.getElementById('lw');
+'Ahmed'.split('').forEach(c=>{const i=document.createElement('i');i.textContent=c;lw.appendChild(i)});
+const dot=document.createElement('b');dot.textContent='.';lw.appendChild(dot);
+const tl=gsap.timeline();
+tl.from('#lw i,#lw b',{yPercent:110,stagger:.06,duration:.6,ease:'power4.out'})
+  .to('#loader',{yPercent:-100,duration:.9,ease:'power4.inOut'},'+=.25')
+  .from('.hero h1 .line>span',{yPercent:110,stagger:.12,duration:1,ease:'power4.out'},'-=.4')
+  .from('.status,.role,.hero p,.ctas,.guarantee,.photo',{y:30,opacity:0,stagger:.08,duration:.7},'-=.6');
+if(reduce)tl.progress(1);
 
-    <!-- Floating Tech Icons -->
-    <div class="floating-tech-icons" id="floatingIcons">
-        <div class="tech-icon" data-tech="angular"><i class="fab fa-angular"></i></div>
-        <div class="tech-icon" data-tech="react"><i class="fab fa-react"></i></div>
-        <div class="tech-icon" data-tech="vue"><i class="fab fa-vuejs"></i></div>
-        <div class="tech-icon" data-tech="js"><i class="fab fa-js-square"></i></div>
-        <div class="tech-icon" data-tech="node"><i class="fab fa-node-js"></i></div>
-        <div class="tech-icon" data-tech="python"><i class="fab fa-python"></i></div>
-    </div>
+/* swap word */
+const sw=document.getElementById('swap');
+setInterval(()=>{wi=(wi+1)%4;gsap.to(sw,{yPercent:-100,opacity:0,duration:.35,ease:'power2.in',onComplete:()=>{sw.textContent=words[lang][wi];gsap.fromTo(sw,{yPercent:100,opacity:0},{yPercent:0,opacity:1,duration:.45,ease:'power3.out'})}})},2400);
 
-    <!-- Sound Visualizer -->
-    <div class="sound-visualizer" id="soundVisualizer">
-        <div class="visualizer-toggle" id="visualizerToggle">
-            <i class="fas fa-music"></i>
-        </div>
-        <canvas id="visualizer-canvas" class="visualizer-canvas"></canvas>
-    </div>
+/* nav + progress */
+ScrollTrigger.create({start:0,end:'max',onUpdate:s=>{document.getElementById('progress').style.transform=`scaleX(${s.progress})`;document.getElementById('nav').classList.toggle('solid',s.scroll()>60)}});
 
-    <!-- Interactive Neon Text -->
-    <div class="neon-text-container" id="neonTextContainer">
-        <div class="neon-text" data-text="AHMED ASHRAF">AHMED ASHRAF</div>
-        <div class="neon-subtext">Frontend Developer</div>
-    </div>
+/* cursor + magnetic */
+const cur=document.getElementById('cursor');let mx=innerWidth/2,my=innerHeight/2;
+addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;gsap.to(cur,{x:mx,y:my,duration:.18})});
+document.addEventListener('mouseover',e=>{cur.classList.toggle('big',!!e.target.closest('a,button,summary,.chips label'))});
+document.querySelectorAll('.mag').forEach(el=>{
+  el.addEventListener('mouseleave',()=>gsap.to(el,{x:0,y:0,duration:.5,ease:'elastic.out(1,.4)'}));
+  el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();gsap.to(el,{x:(e.clientX-r.left-r.width/2)*.3,y:(e.clientY-r.top-r.height/2)*.3,duration:.3})});
+});
 
-    <!-- Matrix Rain Effect -->
-    <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+/* node network */
+const cv=document.getElementById('net'),cx=cv.getContext('2d');let W,H,pts=[];
+function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;const n=Math.min(70,Math.floor(W*H/22000));pts=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3}))}
+size();addEventListener('resize',size);
+(function draw(){cx.clearRect(0,0,W,H);
+  for(const p of pts){if(!reduce){p.x+=p.vx;p.y+=p.vy}if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+  for(let i=0;i<pts.length;i++){const a=pts[i],dm=Math.hypot(a.x-mx,a.y-my);
+    for(let j=i+1;j<pts.length;j++){const b=pts[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<150){cx.strokeStyle=`rgba(255,91,46,${(1-d/150)*.22})`;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}
+    if(dm<200){cx.strokeStyle=`rgba(212,255,58,${(1-dm/200)*.5})`;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(mx,my);cx.stroke()}
+    cx.fillStyle=dm<200?'#D4FF3A':'rgba(242,239,233,.35)';cx.beginPath();cx.arc(a.x,a.y,1.8,0,7);cx.fill()}
+  requestAnimationFrame(draw)})();
 
-    <!-- Holographic Card -->
-    <div class="holographic-card" id="holographicCard">
-        <div class="holo-content">
-            <div class="holo-avatar">
-                <img src="assets/img/hero-1.png" alt="أحمد أشرف">
-            </div>
-            <div class="holo-info">
-                <h3>Ahmed Ashraf</h3>
-                <p>Frontend Developer</p>
-                <div class="holo-stats">
-                    <div class="stat">
-                        <span class="value">25+</span>
-                        <span class="label">Projects</span>
-                    </div>
-                    <div class="stat">
-                        <span class="value">3+</span>
-                        <span class="label">Years</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+/* marquees */
+function marquee(id,dir){const t=document.getElementById(id);
+  const tw=dir>0?gsap.fromTo(t,{xPercent:0},{xPercent:-50,repeat:-1,duration:30,ease:'none'}):gsap.fromTo(t,{xPercent:-50},{xPercent:0,repeat:-1,duration:30,ease:'none'});
+  ScrollTrigger.create({onUpdate:s=>gsap.to(tw,{timeScale:1+Math.min(Math.abs(s.getVelocity())/300,5),duration:.2,overwrite:true,onComplete:()=>gsap.to(tw,{timeScale:1,duration:.8})})});}
+marquee('m1',1);marquee('m2',-1);
 
-    <!-- Light Creative Graphics -->
-    <div class="creative-graphics">
-        <!-- Floating Geometric Shapes -->
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-        </div>
-        
-        <!-- Animated Background Lines -->
-        <div class="bg-lines">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-        </div>
-        
-        <!-- Subtle Glow Effects -->
-        <div class="glow-effects">
-            <div class="glow glow-1"></div>
-            <div class="glow glow-2"></div>
-        </div>
-    </div>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="logo-container">
-                    <div class="logo-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h2 data-en="Ahmed Ashraf" data-ar="أحمد أشرف">أحمد أشرف</h2>
-                </div>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link" data-en="About" data-ar="من أنا">من أنا</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#frontend" class="nav-link" data-en="Frontend" data-ar="الفرونت إند">الفرونت إند</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#ai" class="nav-link" data-en="AI" data-ar="الذكاء الاصطناعي">الذكاء الاصطناعي</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#cybersecurity" class="nav-link" data-en="Cybersecurity" data-ar="الأمن السيبراني">الأمن السيبراني</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل معي">تواصل معي</a>
-                </li>
-            </ul>
-            <div class="nav-controls">
-                <div class="control-buttons">
-                    <button class="theme-toggle" id="theme-toggle" title="تبديل الوضع المظلم">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="lang-toggle" id="lang-toggle" title="تغيير اللغة">
-                        <span class="lang-text">EN</span>
-                    </button>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </div>
-    </nav>
+/* about reveal */
+let aboutTw;
+function splitAbout(){const at=document.getElementById('aboutText');
+  at.innerHTML=at.innerHTML.replace(/(<em>.*?<\/em>)|([^\s<>]+)/g,(m,em,w)=>`<span class="w">${em||w}</span>`);
+  if(aboutTw){aboutTw.scrollTrigger.kill();aboutTw.kill()}
+  if(reduce){at.querySelectorAll('.w').forEach(w=>w.style.opacity=1);return}
+  aboutTw=gsap.to(at.querySelectorAll('.w'),{opacity:1,stagger:.05,scrollTrigger:{trigger:at,start:'top 80%',end:'bottom 45%',scrub:true}});}
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-particles" id="particles"></div>
-        <div class="hero-container">
-            <div class="hero-content" data-aos="fade-up">
-                <div class="hero-text">
-                    <div class="hero-badge" data-aos="fade-down">
-                        <i class="fas fa-star"></i>
-                        <span data-en="Available for Projects" data-ar="متاح للمشاريع">متاح للمشاريع</span>
-                    </div>
-                    <h1 class="hero-title">
-                        <span class="title-line" data-en="Hello, I'm" data-ar="مرحباً، أنا">مرحباً، أنا</span>
-                        <span class="gradient-text typing-effect" data-en="Ahmed Ashraf" data-ar="أحمد أشرف">أحمد أشرف</span>
-                        <div class="title-decoration">
-                            <div class="decoration-dot"></div>
-                            <div class="decoration-line"></div>
-                        </div>
-                    </h1>
-                    <p class="hero-subtitle" data-en="Frontend Developer | AI Expert | Cybersecurity Specialist" data-ar="مطور فرونت إند متخصص | خبير في الذكاء الاصطناعي | مختص الأمن السيبراني">
-                        مطور فرونت إند متخصص | خبير في الذكاء الاصطناعي | مختص الأمن السيبراني
-                    </p>
-                    <p class="hero-description" data-en="I create modern and responsive websites using the latest technologies, with expertise in Angular and programming training" data-ar="أقوم بتطوير مواقع ويب حديثة ومتجاوبة باستخدام أحدث التقنيات، مع خبرة في Angular وتدريب البرمجة">
-                        أقوم بتطوير مواقع ويب حديثة ومتجاوبة باستخدام أحدث التقنيات، مع خبرة في Angular وتدريب البرمجة
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#frontend" class="btn btn-primary glow-btn">
-                            <i class="fas fa-rocket"></i>
-                            <span data-en="View My Work" data-ar="أعمالي في الفرونت إند">أعمالي في الفرونت إند</span>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary glass-btn">
-                            <i class="fas fa-paper-plane"></i>
-                            <span data-en="Get In Touch" data-ar="تواصل معي">تواصل معي</span>
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-project-diagram"></i>
-                            </div>
-                            <div class="stat-content">
-                                <div class="stat-number">25+</div>
-                                <div class="stat-label" data-en="Completed Projects" data-ar="مشروع مكتمل">مشروع مكتمل</div>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="stat-content">
-                                <div class="stat-number">3+</div>
-                                <div class="stat-label" data-en="Years Experience" data-ar="سنوات خبرة">سنوات خبرة</div>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="stat-content">
-                                <div class="stat-number">100+</div>
-                                <div class="stat-label" data-en="Students Trained" data-ar="طالب مدرب">طالب مدرب</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-social">
-                        <a href="#" class="social-btn" data-platform="linkedin">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-btn" data-platform="github">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-btn" data-platform="twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-btn" data-platform="instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-                    <div class="image-container">
-                        <div class="image-frame">
-                            <img src="assets/img/hero-1.png" alt="أحمد أشرف" class="hero-img">
-                            <div class="image-overlay"></div>
-                            <div class="image-decoration">
-                                <div class="decoration-circle"></div>
-                                <div class="decoration-plus"></div>
-                            </div>
-                        </div>
-                        <div class="floating-elements">
-                            <div class="floating-icon" style="--delay: 0s">
-                                <i class="fab fa-angular"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 1s">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 2s">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 3s">
-                                <i class="fab fa-python"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-shapes">
-            <div class="shape-1"></div>
-            <div class="shape-2"></div>
-            <div class="shape-3"></div>
-            <div class="shape-4"></div>
-            <div class="shape-5"></div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-line"></div>
-            <div class="scroll-text" data-en="Scroll Down" data-ar="اسحب للأسفل">اسحب للأسفل</div>
-        </div>
-    </section>
+/* counters */
+document.querySelectorAll('.count').forEach(c=>{const o={v:0};c.textContent='0';gsap.to(o,{v:+c.dataset.to,duration:2,ease:'power2.out',scrollTrigger:{trigger:c,start:'top 92%'},onUpdate:()=>c.textContent=Math.round(o.v)})});
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title" data-en="About Me" data-ar="من أنا">من أنا</h2>
-                <p class="section-subtitle" data-en="My Journey in the World of Technology" data-ar="رحلتي في عالم التكنولوجيا">رحلتي في عالم التكنولوجيا</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <p class="about-description" data-en="I am Ahmed Ashraf, a Cybersecurity graduate with a great passion for application development and Artificial Intelligence. My journey began with studying AI, then I moved on to work as a programming trainer, and currently I focus on frontend development using Angular." data-ar="أنا أحمد أشرف، خريج تخصص الأمن السيبراني مع شغف كبير بتطوير التطبيقات والذكاء الاصطناعي. بدأت رحلتي بدراسة الـ AI ثم انتقلت للعمل كمدرب برمجة، وحالياً أركز على تطوير الفرونت إند باستخدام Angular.">
-                        أنا أحمد أشرف، خريج تخصص الأمن السيبراني مع شغف كبير بتطوير التطبيقات والذكاء الاصطناعي. 
-                        بدأت رحلتي بدراسة الـ AI ثم انتقلت للعمل كمدرب برمجة، وحالياً أركز على تطوير الفرونت إند باستخدام Angular.
-                    </p>
-                    <div class="skills-overview">
-                        <div class="skill-category">
-                            <i class="fas fa-laptop-code"></i>
-                            <h4 data-en="Frontend Development" data-ar="تطوير الفرونت إند">تطوير الفرونت إند</h4>
-                            <p data-en="Specialized in Angular, HTML5, CSS3, JavaScript" data-ar="متخصص في Angular, HTML5, CSS3, JavaScript">متخصص في Angular, HTML5, CSS3, JavaScript</p>
-                        </div>
-                        <div class="skill-category">
-                            <i class="fas fa-brain"></i>
-                            <h4 data-en="Artificial Intelligence" data-ar="الذكاء الاصطناعي">الذكاء الاصطناعي</h4>
-                            <p data-en="Experience in Machine Learning and Model Development" data-ar="خبرة في Machine Learning وتطوير النماذج">خبرة في Machine Learning وتطوير النماذج</p>
-                        </div>
-                        <div class="skill-category">
-                            <i class="fas fa-shield-alt"></i>
-                            <h4 data-en="Cybersecurity" data-ar="الأمن السيبراني">الأمن السيبراني</h4>
-                            <p data-en="Strong academic foundation in system protection" data-ar="أساس أكاديمي قوي في حماية الأنظمة">أساس أكاديمي قوي في حماية الأنظمة</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image" data-aos="fade-left">
-                    <img src="assets/img/hero-2.jpg" alt="أحمد أشرف" class="about-img">
-                </div>
-            </div>
-        </div>
-    </section>
+/* reveals */
+gsap.utils.toArray('.pcard,.why div,.pack,.ind span,.faq details,.steps div').forEach(el=>gsap.from(el,{y:40,opacity:0,duration:.7,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 92%'}}));
 
-    <!-- Frontend Portfolio Section -->
-    <section id="frontend" class="frontend-portfolio">
-        <div class="portfolio-background">
-            <div class="bg-shapes">
-                <div class="bg-shape-1"></div>
-                <div class="bg-shape-2"></div>
-                <div class="bg-shape-3"></div>
-            </div>
-        </div>
-        
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <div class="section-badge">
-                    <i class="fas fa-code"></i>
-                    <span data-en="My Latest Work" data-ar="أحدث أعمالي">أحدث أعمالي</span>
-                </div>
-                <h2 class="section-title" data-en="Frontend Development Portfolio" data-ar="محفظة أعمال الفرونت إند">محفظة أعمال الفرونت إند</h2>
-                <p class="section-subtitle" data-en="Showcasing creative solutions and innovative designs that bring ideas to life" data-ar="عرض حلول إبداعية وتصاميم مبتكرة تحول الأفكار إلى واقع">عرض حلول إبداعية وتصاميم مبتكرة تحول الأفكار إلى واقع</p>
-            </div>
+/* stacking cards */
+gsap.utils.toArray('.card').forEach((c,i,arr)=>{if(i<arr.length-1&&!matchMedia('(max-width:700px)').matches)gsap.to(c,{scale:.94,opacity:.5,scrollTrigger:{trigger:arr[i+1],start:'top 80%',end:'top 30%',scrub:true}})});
 
-            <!-- Enhanced Portfolio Navigation -->
-            <div class="portfolio-navigation" data-aos="fade-up" data-aos-delay="100">
-                <div class="nav-container">
-                    <button class="portfolio-nav-btn active" data-category="all" data-count="14">
-                        <div class="nav-icon"><i class="fas fa-th-large"></i></div>
-                        <div class="nav-content">
-                            <span class="nav-title" data-en="All Projects" data-ar="جميع المشاريع">جميع المشاريع</span>
-                            <span class="nav-count">14</span>
-                        </div>
-                    </button>
-                    <button class="portfolio-nav-btn" data-category="portfolios" data-count="2">
-                        <div class="nav-icon"><i class="fas fa-user-circle"></i></div>
-                        <div class="nav-content">
-                            <span class="nav-title" data-en="Portfolios" data-ar="بورتفوليوهات">بورتفوليوهات</span>
-                            <span class="nav-count">2</span>
-                        </div>
-                    </button>
-                    <button class="portfolio-nav-btn" data-category="landing" data-count="2">
-                        <div class="nav-icon"><i class="fas fa-rocket"></i></div>
-                        <div class="nav-content">
-                            <span class="nav-title" data-en="Landing Pages" data-ar="صفحات هبوط">صفحات هبوط</span>
-                            <span class="nav-count">2</span>
-                        </div>
-                    </button>
-                    <button class="portfolio-nav-btn" data-category="companies" data-count="6">
-                        <div class="nav-icon"><i class="fas fa-building"></i></div>
-                        <div class="nav-content">
-                            <span class="nav-title" data-en="Companies" data-ar="شركات">شركات</span>
-                            <span class="nav-count">6</span>
-                        </div>
-                    </button>
-                    <button class="portfolio-nav-btn" data-category="educational" data-count="1">
-                        <div class="nav-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="nav-content">
-                            <span class="nav-title" data-en="Educational Platforms" data-ar="منصات تعليمية">منصات تعليمية</span>
-                            <span class="nav-count">1</span>
-                        </div>
-                    </button>
-                </div>
-            </div>
+/* workflow */
+let ftl;
+function buildFlow(){const svg=document.getElementById('flowSvg');const s=steps[lang];const xs=s.map((_,i)=>20+i*220);let h='';
+  xs.slice(0,-1).forEach(x=>{const d=`M${x+180} 110 L ${x+220} 110`;h+=`<path class="wire-bg" d="${d}"/><path class="wire" d="${d}"/>`});
+  s.forEach(([t,sub],i)=>{h+=`<g class="node"><rect x="${xs[i]}" y="60" width="180" height="100" rx="18"/><circle class="dot" cx="${xs[i]+24}" cy="86" r="6"/><text x="${xs[i]+24}" y="122">${t}</text><text class="sub" x="${xs[i]+24}" y="144">${sub}</text></g>`});
+  svg.innerHTML=h;document.getElementById('vflow').innerHTML=s.map(([t,sub])=>`<div><b>${t}</b><span>${sub}</span></div>`).join('');const wires=svg.querySelectorAll('.wire'),nodes=svg.querySelectorAll('.node');nodes[0].classList.add('on');
+  wires.forEach(w=>{const L=w.getTotalLength();w.style.strokeDasharray=L;w.style.strokeDashoffset=L});
+  if(ftl){ftl.scrollTrigger&&ftl.scrollTrigger.kill();ftl.kill()}
+  if(reduce){wires.forEach(w=>w.style.strokeDashoffset=0);nodes.forEach(n=>n.classList.add('on'));return}
+  ftl=gsap.timeline({scrollTrigger:{trigger:'#process',start:'top 60%',end:'center 40%',scrub:true}});
+  wires.forEach((w,i)=>ftl.to(w,{strokeDashoffset:0,duration:1,onUpdate(){nodes[i+1].classList.toggle('on',this.progress()>.95)}}));}
 
-            <!-- Portfolio Showcase -->
-            <div class="portfolio-showcase">
-                <!-- Featured Project -->
-                <div class="featured-project" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-container">
-                        <div class="project-preview">
-                            <div class="preview-device">
-                                <div class="device-frame">
-                                    <div class="device-screen">
-                                        <img src="assets/img/prof.png" alt="منصة تعليمية">
-                                        <div class="screen-overlay">
-                                            <div class="overlay-actions">
-                                                <a href="https://prof-english.net" class="preview-btn live-demo">
-                                                    <i class="fas fa-play"></i>
-                                                    <span data-en="Live Demo" data-ar="عرض مباشر">عرض مباشر</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-badge featured-badge">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span data-en="Featured Educational Platform" data-ar="منصة تعليمية مميزة">منصة تعليمية مميزة</span>
-                            </div>
-                            <h3 class="project-title" data-en="Interactive Learning Platform" data-ar="منصة تعليمية تفاعلية">منصة تعليمية تفاعلية</h3>
-                            <p class="project-description" data-en="A comprehensive e-learning platform with video courses, quizzes, and progress tracking, now featured to showcase its robust capabilities and interactive features." data-ar="منصة تعلم إلكتروني كاملة مع دورات فيديو واختبارات وتتبع التقدم، تميزت لعرض قدراتها القوية وميزاتها التفاعلية.">منصة تعلم إلكتروني كاملة مع دورات فيديو واختبارات وتتبع التقدم، تميزت لعرض قدراتها القوية وميزاتها التفاعلية.</p>
-                            <div class="project-metrics">
-                                <div class="metric">
-                                    <div class="metric-value">100%</div>
-                                    <div class="metric-label" data-en="Responsive" data-ar="متجاوب">متجاوب</div>
-                                </div>
-                                <div class="metric">
-                                    <div class="metric-value">98</div>
-                                    <div class="metric-label" data-en="Engagement" data-ar="تفاعل">تفاعل</div>
-                                </div>
-                                <div class="metric">
-                                    <div class="metric-value">A+</div>
-                                    <div class="metric-label" data-en="UX Design" data-ar="تصميم تجربة المستخدم">تصميم تجربة المستخدم</div>
-                                </div>
-                            </div>
-                            <div class="project-technologies">
-                                <div class="tech-stack">
-                                    <div class="tech-item angular">
-                                        <i class="fab fa-angular"></i>
-                                        <span>Angular</span>
-                                    </div>
-                                    <div class="tech-item node">
-                                        <i class="fab fa-node-js"></i>
-                                        <span>Node.js</span>
-                                    </div>
-                                    <div class="tech-item socketio">
-                                        <i class="fas fa-plug"></i>
-                                        <span>Socket.io</span>
-                                    </div>
-                                    <div class="tech-item mongodb">
-                                        <i class="fas fa-database"></i>
-                                        <span>MongoDB</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+/* horizontal work */
+const track=document.getElementById('htrack');
+const hs=reduce?null:gsap.to(track,{x:()=>-(track.scrollWidth-innerWidth),ease:'none',scrollTrigger:{trigger:'#work',pin:true,scrub:1,end:()=>'+='+(track.scrollWidth-innerWidth),invalidateOnRefresh:true,anticipatePin:1}});
+addEventListener('load',()=>ScrollTrigger.refresh());
+document.querySelectorAll('.proj .img img').forEach(im=>{if(!hs)gsap.from(im.closest('.proj'),{y:40,opacity:0,duration:.7,scrollTrigger:{trigger:im,start:'top 90%'}})});
+document.querySelectorAll('.proj canvas').forEach(c=>{const s=+c.dataset.seed;c.width=760;c.height=400;const g=c.getContext('2d');
+  g.fillStyle='#15151B';g.fillRect(0,0,760,400);const cols=['#FF5B2E','#D4FF3A','#F2EFE9'];
+  for(let i=0;i<9;i++){const x=60+((i*97*s+s*13)%640),y=50+((i*61*s+s*29)%280);
+    if(i){const px=60+(((i-1)*97*s+s*13)%640),py=50+(((i-1)*61*s+s*29)%280);g.strokeStyle='rgba(255,91,46,.5)';g.lineWidth=2;g.beginPath();g.moveTo(px,py);g.bezierCurveTo(px+80,py,x-80,y,x,y);g.stroke()}
+    g.fillStyle='#0B0B0F';g.strokeStyle=cols[i%3];g.lineWidth=1.5;g.beginPath();g.roundRect?g.roundRect(x-34,y-18,68,36,10):g.rect(x-34,y-18,68,36);g.fill();g.stroke()}
+  g.fillStyle='rgba(242,239,233,.9)';g.font='700 44px "Space Grotesk", sans-serif';g.fillText(({1:'E-learning',2:'E-commerce',3:'Legal portal',4:'Your project',5:'Dashboard',6:'Law firm',7:'Real estate',8:'Education',9:'Fintech',10:'Agriculture'})[s],32,370);
+  if(hs)gsap.fromTo(c,{x:-40},{x:0,ease:'none',scrollTrigger:{trigger:c,containerAnimation:hs,start:'left right',end:'right left',scrub:true}});else gsap.from(c.closest('.proj'),{y:40,opacity:0,duration:.7,scrollTrigger:{trigger:c,start:'top 90%'}})});
 
-                <!-- Regular Projects Container -->
-                <div class="regular-projects-container" data-aos="fade-up" data-aos-delay="300">
-                    <!-- Projects Grid -->
-                    <div class="projects-grid">
-                        <!-- Modern E-commerce Platform Project -->
-                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span data-en="E-commerce Platform" data-ar="منصة تجارة إلكترونية">منصة تجارة إلكترونية</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/NEXUS PAY.png" alt="منصة تجارة إلكترونية">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://nexus-pay.netlify.app/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="Modern E-commerce Platform" data-ar="منصة تجارة إلكترونية حديثة">منصة تجارة إلكترونية حديثة</h4>
-                                <p class="card-description" data-en="A comprehensive e-commerce solution built with Laravel, featuring a responsive UI, powerful admin dashboard, and multiple payment integrations, focusing on security and performance." data-ar="منصة تجارة إلكترونية كاملة مبنية بـ Laravel، تتضمن واجهة مستخدم متجاوبة، لوحة تحكم إدارية قوية، وتكاملات دفع متعددة، مع التركيز على الأمان والأداء.">منصة تجارة إلكترونية كاملة مبنية بـ Laravel، تتضمن واجهة مستخدم متجاوبة، لوحة تحكم إدارية قوية، وتكاملات دفع متعددة، مع التركيز على الأمان والأداء.</p>
-                                <div class="card-tags">
-                                    <span class="tag">Laravel</span>
-                                    <span class="tag">PHP</span>
-                                    <span class="tag">MySQL</span>
-                                    <span class="tag">Vue.js</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>5.5k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>450</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="2 weeks ago" data-ar="منذ أسبوعين">منذ أسبوعين</span>
-                                </div>
-                            </div>
-                        </div>
+gsap.from('.big',{yPercent:25,opacity:.2,scrollTrigger:{trigger:'.contact',start:'top 85%',end:'top 35%',scrub:true}});
 
-                        <!-- Solution Law Project -->
-                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="200">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-building"></i>
-                                    <span data-en="Company Website" data-ar="موقع شركة">موقع شركة</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/solution-law.png" alt="Solution Law Website">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://solution-law.netlify.app/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="Solution Law Website" data-ar="موقع الحلول القانونية">موقع الحلول القانونية</h4>
-                                <p class="card-description" data-en="Professional website for a law firm, offering legal services with integrity and dedication." data-ar="موقع احترافي لشركة محاماة، يقدم خدمات قانونية بنزاهة وتفان.">موقع احترافي لشركة محاماة، يقدم خدمات قانونية بنزاهة وتفان.</p>
-                                <div class="card-tags">
-                                    <span class="tag">HTML5</span>
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>1.5k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>120</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="3 days ago" data-ar="منذ 3 أيام">منذ 3 أيام</span>
-                                </div>
-                            </div>
-                        </div>
+/* form → WhatsApp */
+document.getElementById('cform').addEventListener('submit',e=>{e.preventDefault();
+  const n=document.getElementById('fname').value.trim(),need=document.querySelector('input[name=need]:checked').value,m=document.getElementById('fmsg').value.trim();
+  const note=document.getElementById('fnote');
+  if(!n){note.textContent=lang==='ar'?'اكتب اسمك عشان أعرف أرد عليك.':'Add your name so I know who to reply to.';document.getElementById('fname').focus();return}
+  const txt=lang==='ar'?`أهلًا أحمد، أنا ${n}. محتاج: ${need}.\n${m}`:`Hi Ahmed, I'm ${n}. I need: ${need}.\n${m}`;
+  const a=document.createElement('a');a.href=`https://wa.me/${WA}?text=${encodeURIComponent(txt)}`;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+  note.textContent=lang==='ar'?'لو واتساب مفتحش، ابعت على الرقم اللي جنب الفورم.':'If WhatsApp did not open, message the number next to the form.';});
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{const el=document.getElementById(b.dataset.copy);
+  navigator.clipboard.writeText(el.textContent).then(()=>{b.textContent=lang==='ar'?'اتنسخ':'Copied'}).catch(()=>{const r=document.createRange();r.selectNodeContents(el);getSelection().removeAllRanges();getSelection().addRange(r)})}));
 
-                        <!-- AgriBloom Project -->
-                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-tractor"></i>
-                                    <span data-en="Agricultural Website" data-ar="موقع زراعي">موقع زراعي</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/agribloom.png" alt="AgriBloom Website">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://agribloom.netlify.app/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="AgriBloom Sustainable Agriculture" data-ar="أجريبلوم للزراعة المستدامة">أجريبلوم للزراعة المستدامة</h4>
-                                <p class="card-description" data-en="Website dedicated to pioneering sustainable agriculture through innovation and dedication." data-ar="موقع مخصص لريادة الزراعة المستدامة من خلال الابتكار والتفاني.">موقع مخصص لريادة الزراعة المستدامة من خلال الابتكار والتفاني.</p>
-                                <div class="card-tags">
-                                    <span class="tag">HTML5</span>
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>1.8k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>150</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="5 days ago" data-ar="منذ 5 أيام">منذ 5 أيام</span>
-                                </div>
-                            </div>
-                        </div>
+applyLang(lang);
+</script>
 
-                        <!-- Futuristic Fintech Project -->
-                        <div class="project-card landing" data-aos="fade-up" data-aos-delay="400">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                    <span data-en="Fintech Landing Page" data-ar="صفحة هبوط تقنية مالية">صفحة هبوط تقنية مالية</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/NEXUS PAY.png" alt="Futuristic Fintech Website">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://futuristic-fintech-website.netlify.app/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="Futuristic Fintech Website" data-ar="موقع تقنية مالية مستقبلي">موقع تقنية مالية مستقبلي</h4>
-                                <p class="card-description" data-en="Modern and sleek landing page for a futuristic fintech product." data-ar="صفحة هبوط حديثة وأنيقة لمنتج تقنية مالية مستقبلي.">صفحة هبوط حديثة وأنيقة لمنتج تقنية مالية مستقبلي.</p>
-                                <div class="card-tags">
-                                    <span class="tag">HTML5</span>
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>2.1k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>180</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="1 week ago" data-ar="منذ أسبوع">منذ أسبوع</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Luxury Real Estate Project -->
-                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="500">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-city"></i>
-                                    <span data-en="Real Estate Website" data-ar="موقع عقاري">موقع عقاري</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/AXIOM.png" alt="Luxury Real Estate Website">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://luxury-real-estate-website.netlify.app/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="Luxury Real Estate Website" data-ar="موقع عقارات فاخرة">موقع عقارات فاخرة</h4>
-                                <p class="card-description" data-en="Elegant website for luxury real estate properties with stunning visuals and detailed listings." data-ar="موقع أنيق لعقارات فاخرة مع صور مذهلة وقوائم مفصلة.">موقع أنيق لعقارات فاخرة مع صور مذهلة وقوائم مفصلة.</p>
-                                <div class="card-tags">
-                                    <span class="tag">HTML5</span>
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>2.5k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>210</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="2 weeks ago" data-ar="منذ أسبوعين">منذ أسبوعين</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- New Education Landing Page Project (Future Edu) -->
-                        <div class="project-card landing" data-aos="fade-up" data-aos-delay="600">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-rocket"></i>
-                                    <span data-en="Landing Page" data-ar="صفحة هبوط">صفحة هبوط</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/LEARN.png" alt="Education Landing Page">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://blue-flame-team.github.io/Education-LandingPage/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="Education Landing Page" data-ar="موقع تعليمي">Future Edu</h4>
-                                <p class="card-description" data-en="Educational platform to assist in university admissions." data-ar="منصة تعليمية للمساعدة في القبول الجامعي.">منصة تعليمية للمساعدة في القبول الجامعي.</p>
-                                <div class="card-tags">
-                                    <span class="tag">HTML5</span>
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>1.5k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>120</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="3 days ago" data-ar="منذ 3 أيام">منذ 3 أيام</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Elbawaba 2025 Project -->
-                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="700">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-balance-scale"></i>
-                                    <span data-en="Legal Website" data-ar="موقع قانوني">موقع قانوني</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/mohamo.png" alt="Elbawaba 2025">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://blue-flame-team.github.io/Elbawaba2025/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="Elbawaba Legal Portal" data-ar="البوابة القانونية السعودية">البوابة القانونية السعودية</h4>
-                                <p class="card-description" data-en="Discover Saudi Arabian legal rulings, fatwas, and regulations." data-ar="اكتشف الأحكام والفتاوى والأنظمة القانونية في المملكة العربية السعودية">اكتشف الأحكام والفتاوى والأنظمة القانونية في المملكة العربية السعودية</p>
-                                <div class="card-tags">
-                                    <span class="tag">HTML5</span>
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>1.2k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>90</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="1 day ago" data-ar="منذ يوم">منذ يوم</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Ahmed Hatem Eldib Project -->
-                        <div class="project-card portfolios" data-aos="fade-up" data-aos-delay="800">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-user-circle"></i>
-                                    <span data-en="Portfolio" data-ar="بورتفوليو">بورتفوليو</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/hatem.png" alt="Ahmed Hatem Eldib">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://blue-flame-team.github.io/Ahmed-Hatem-Eldib/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="Ahmed Hatem Eldib" data-ar="أحمد حاتم الديب">أحمد حاتم الديب</h4>
-                                <p class="card-description" data-en="Marketing and Business Consultant | Founder of Marketing Mindset." data-ar="مستشار تسويق وأعمال | مؤسس Marketing Mindset">مستشار تسويق وأعمال | مؤسس Marketing Mindset</p>
-                                <div class="card-tags">
-                                    <span class="tag">HTML5</span>
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>1.8k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>150</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="2 days ago" data-ar="منذ يومين">منذ يومين</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Admin Panel Project -->
-                        <div class="project-card companies" data-aos="fade-up" data-aos-delay="900">
-                            <div class="card-header">
-                                <div class="project-type">
-                                    <i class="fas fa-tachometer-alt"></i>
-                                    <span data-en="Admin Panel" data-ar="لوحة تحكم">لوحة تحكم</span>
-                                </div>
-                                <div class="project-status">
-                                    <span class="status-dot"></span>
-                                    <span data-en="Live" data-ar="مباشر">مباشر</span>
-                                </div>
-                            </div>
-                            <div class="card-preview">
-                                <img src="assets/img/admin-mohamo.png" alt="Admin Panel">
-                                <div class="preview-overlay">
-                                    <div class="overlay-actions">
-                                        <a href="https://blue-flame-team.github.io/admin/" target="_blank" class="action-btn" data-action="view">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <button class="action-btn" data-action="code">
-                                            <i class="fab fa-github"></i>
-                                        </button>
-                                        <button class="action-btn" data-action="like">
-                                            <i class="fas fa-heart"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h4 class="card-title" data-en="Admin Control Panel" data-ar="لوحة تحكم الإدارة">لوحة تحكم الإدارة</h4>
-                                <p class="card-description" data-en="A comprehensive administrative control panel." data-ar="لوحة تحكم إدارية متكاملة.">لوحة تحكم إدارية متكاملة.</p>
-                                <div class="card-tags">
-                                    <span class="tag">HTML5</span>
-                                    <span class="tag">CSS3</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-eye"></i>
-                                        <span>1.0k</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-heart"></i>
-                                        <span>80</span>
-                                    </div>
-                                </div>
-                                <div class="project-date">
-                                    <span data-en="4 days ago" data-ar="منذ 4 أيام">منذ 4 أيام</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Load More Button -->
-                <div class="load-more-section" data-aos="fade-up" data-aos-delay="500">
-                    <button class="load-more-btn">
-                        <span class="btn-text" data-en="View All Projects" data-ar="عرض جميع المشاريع">عرض جميع المشاريع</span>
-                        <div class="btn-icon">
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                    </button>
-                    <p class="load-more-text" data-en="Discover more of my creative work and technical solutions" data-ar="اكتشف المزيد من أعمالي الإبداعية والحلول التقنية">اكتشف المزيد من أعمالي الإبداعية والحلول التقنية</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Section -->
-    <section id="ai" class="ai-section">
-        <div class="container">
-            <div class="coming-soon-container" data-aos="fade-up">
-                <div class="coming-soon-content">
-                    <div class="icon-wrapper">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h2 class="coming-soon-title" data-en="Artificial Intelligence" data-ar="الذكاء الاصطناعي">الذكاء الاصطناعي</h2>
-                    <p class="coming-soon-description" data-en="Exciting projects in the field of Artificial Intelligence and Machine Learning are coming soon..." data-ar="مشاريع مثيرة في مجال الذكاء الاصطناعي وتعلم الآلة قادمة قريباً...">مشاريع مثيرة في مجال الذكاء الاصطناعي وتعلم الآلة قادمة قريباً...</p>
-                    <div class="coming-soon-badge">
-                        <span data-en="Soon" data-ar="قريباً">قريباً</span>
-                    </div>
-                    <div class="skills-preview">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-robot"></i>
-                            <span>Machine Learning</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Data Analysis</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cybersecurity Section -->
-    <section id="cybersecurity" class="cybersecurity-section">
-        <div class="container">
-            <div class="coming-soon-container" data-aos="fade-up">
-                <div class="coming-soon-content">
-                    <div class="icon-wrapper">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h2 class="coming-soon-title" data-en="Cybersecurity" data-ar="الأمن السيبراني">الأمن السيبراني</h2>
-                    <p class="coming-soon-description" data-en="Projects and expertise in cybersecurity and system protection are coming soon..." data-ar="مشاريع وخبرات في مجال الأمن السيبراني وحماية الأنظمة قادمة قريباً...">مشاريع وخبرات في مجال الأمن السيبراني وحماية الأنظمة قادمة قريباً...</p>
-                    <div class="coming-soon-badge">
-                        <span data-en="Soon" data-ar="قريباً">قريباً</span>
-                    </div>
-                    <div class="skills-preview">
-                        <div class="skill-item">
-                            <i class="fas fa-lock"></i>
-                            <span>Security Analysis</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-bug"></i>
-                            <span>Penetration Testing</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-network-wired"></i>
-                            <span>Network Security</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">تواصل معي</h2>
-                <p class="section-subtitle" data-en="Have a project? Let's talk!" data-ar="هل لديك مشروع؟ دعنا نتحدث!">هل لديك مشروع؟ دعنا نتحدث!</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4 data-en="Email" data-ar="البريد الإلكتروني">البريد الإلكتروني</h4>
-                            <p>mnoomidoostar6@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4 data-en="Phone" data-ar="الهاتف">الهاتف</h4>
-                            <p>+20 102 684 3062</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4 data-en="Location" data-ar="الموقع">الموقع</h4>
-                            <p>القاهرة، مصر</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="الاسم" data-en-placeholder="Name" data-ar-placeholder="الاسم" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" data-en-placeholder="Email" data-ar-placeholder="البريد الإلكتروني" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="الموضوع" data-en-placeholder="Subject" data-ar-placeholder="الموضوع" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="الرسالة" data-en-placeholder="Message" data-ar-placeholder="الرسالة" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i>
-                            <span data-en="Send Message" data-ar="إرسال الرسالة">إرسال الرسالة</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p data-en="&copy; 2024 Ahmed Ashraf. All Rights Reserved." data-ar="&copy; 2024 أحمد أشرف. جميع الحقوق محفوظة.">&copy; 2024 أحمد أشرف. جميع الحقوق محفوظة.</p>
-                <p data-en="Developed with <i class='fas fa-heart'></i> using the latest technologies" data-ar="تم التطوير بـ <i class='fas fa-heart'></i> باستخدام أحدث التقنيات">تم التطوير بـ <i class="fas fa-heart"></i> باستخدام أحدث التقنيات</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+</body></html>
